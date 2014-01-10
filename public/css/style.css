@@ -1,0 +1,137 @@
+#header-interno {
+  background: url("../imagem/layout/fundo-banner-interna.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  float: left;
+  height: 263px;
+  margin: -20px 0 0;
+  padding: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.centro{
+   margin: 0 auto;
+   width:1000px;
+   height:150px;
+   
+/*   background:#666;*/
+}
+
+#pagina-interna {
+  float: left;
+  font-family: 'Advent Pro',sans-serif;
+  margin: -70px 0 0;
+  position: relative;
+  width: 100%;
+}
+
+.bloco{
+    /*background: none repeat scroll 0 0 #00FF00;*/
+    float: left;
+    height: 133px;
+    margin: 0;
+    padding: 0;
+    width: 223px;
+}
+
+.titulo {
+  color: #333333;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  left: 5px;
+  margin-top: -25px;
+  padding: 0 0 0 250px;
+  position: relative;
+  width: 100%;
+}
+
+.contato-titulo {
+  color: #333333;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 0 280px;
+  position: relative;
+}
+.texto{
+    font-size:20px;
+	color:#666;
+	padding:5px;
+	
+}
+
+/* Coleções */
+
+.produtos-total {
+  float: left;
+  width: 720px;
+}
+
+.produto-interno {
+  border: 3px solid #666666;
+  border-radius: 7px;
+  float: left;
+  height: 220px;
+  list-style: none outside none;
+  margin: 0 13px 70px 17px;
+  padding: 0;
+  width: 183px;
+}
+
+.tabela {
+  margin: 20px 0 0;
+}
+.listCategory {
+  float: left;
+  margin: 70px 0 0 30px;
+  width: 200px;
+}
+
+
+.menu-produtos-interno{
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.seletor, .menu-produtos-interno:hover{
+    color:#333;
+}
+
+.noticias-interna{
+	margin-top:100px;
+}
+
+#noticia-mais{
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 5px;
+    width: 187px;
+}
+
+textarea{
+ padding:5px;
+ border: solid 1px #CCC;
+ border-radius:5px;
+}
+
+.divisao{
+  margin: 2px;
+}
+ .internaCtrl {
+		margin:0 auto;
+		width:1000px; 
+ }
+.boxNews {
+  float: left;
+  width: 100%;
+  display: block;
+}

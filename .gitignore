@@ -1,0 +1,11 @@
+# Arquivo utilizado para ignorar arquivos a serem enviados para o repositório
+
+# Ignorar arquivos específicos
+.db
+
+# Use curingas como
+#*~
+#*.swp
+
+# Ignorar todos os diretórios e arquivos em um diretório.
+cache/**/*

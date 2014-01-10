@@ -1,0 +1,44 @@
+
+/*****carousel style*****/
+.carousel-box {width:100%; height:150px; overflow:hidden; position:relative; }
+
+.carousel-box .next {display:block; width:30px; height:60px; text-indent:-5000px; background:url(../../../imagem/layout/next.png) left top no-repeat; position:absolute; right:0px; top:37px;}
+
+.carousel-box .prev {display:block; width:30px; height:60px; text-indent:-5000px; background:url(../../../imagem/layout/prev.png) right top no-repeat; position:absolute; left:0px; top:37px;}
+
+
+#carousel li {width:245px; height:102px; margin:0; !important;position:relative; background:url(../../../imagem/layout/bg_img_carocel.png) no bottom;}
+.jCarouselLite {top:24px; left:35px !important; width:730px !important;}
+
+.carouse2-box {width:1080px; height:450px; overflow:hidden; position:relative;left:50%; margin-left:-540px; font-size:11px; line-height:16px; color:#747080;}
+.carouse2-box .next {display:block; width:52px; height:40px; text-indent:-5000px; background:url(../images/carousel2-control.png) left top no-repeat; position:absolute; right:0px; top:209px;}
+.carouse2-box .prev {display:block; width:52px; height:40px; text-indent:-5000px; background:url(../images/carousel2-control.png) right top no-repeat; position:absolute; left:0px; top:209px;}
+#carouse2 li {width:219px !important; height:370px !important; margin-right:21px !important;}
+.carouse2-box h4 {padding-left:67px;}
+.carouse2-box span {display:block; font-weight:bold; color:#ceccd6; font-size:13px;}
+.carouse2-box a {margin-bottom:17px; display:inline-block;}
+.jCarouselLite2 {margin:22px 0 0 0px; left:70px !important; width:940px !important;}
+
+/*****slideshow style*****/
+.slideshow-box {width:100%;}
+
+#nav {
+	position:absolute;
+	top:31px;
+	right:16px;
+	overflow:hidden;
+}
+
+#nav a {
+	background:url(../images/slideshow-control.png) right 0 no-repeat;
+	text-indent:-5000px;
+	display:block;
+	height:13px;
+	width:13px;
+	margin-right:4px;
+	float:left;
+}
+#nav a:hover, #nav a.activeSlide {background-position:left 0;}
+
+#nav a.activeSlide {cursor:default;}
+
