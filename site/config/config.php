@@ -15,25 +15,27 @@
 |
 */
 
-$config['base_url']	= 'http://localhost/liakurtz/';
+$config['base_url']	= 'http://ipecon.com.br/2014/';
+
 $config['folder_admin']	= 'admin';
+
 $config['modulos'] = array(
- 'configuracao' => 'Configuração',
- 'empresa' => 'Empresa',
- 'Noticia'  => 'Noticia',
- 'modelo'  => 'Coleções',
- 'produto' => 'Produto',
- 'banners' => 'Banners',
-);
+                    'configuracao' => 'Configuração',
+                    'banners' => 'Banners',
+                    'empresa' => 'Empresa',
+                    'noticias'  => 'Noticias',
+                    'galerias'  => 'Galerias de foto',
+                    'descricaoCursos' => 'Descrição dos cursos',
+               );
 
 $config['menu'] = array(
-    'configuracao' => 'Configuração',
-	'empresa' => 'Empresa',
-	'Noticia'  => 'Noticia',
-	'modelo'  => 'Coleções',
- 	'produto' => 'Produto',
-	'banners' => 'Banners',
-);
+                    'configuracao' => 'Configuração',
+                    'banners' => 'Banners',
+                    'empresa' => 'Empresa',
+                    'noticias'  => 'Noticias',
+                    'galerias'  => 'Galerias de foto',
+                    'descricaoCursos' => 'Descrição dos cursos',
+               );
 
 /*
 |--------------------------------------------------------------------------
