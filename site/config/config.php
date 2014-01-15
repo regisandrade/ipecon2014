@@ -24,7 +24,7 @@ $config['modulos'] = array(
                     'banners' => 'Banners',
                     'empresa' => 'Empresa',
                     'noticias'  => 'Noticias',
-                    'galerias'  => 'Galerias de foto',
+                    'galerias'  => 'Galeria de fotos',
                     'descricaoCursos' => 'Descrição dos cursos',
                );
 

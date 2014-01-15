@@ -2,6 +2,7 @@
 
 # Ignorar arquivos específicos
 .db
+.psd
 
 # Use curingas como
 #*~

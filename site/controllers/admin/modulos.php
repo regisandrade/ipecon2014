@@ -53,11 +53,14 @@ class Modulos extends CI_Controller{
 		array(
 		'id_configuracao'=>array('type'=>'pk','label'=>'N°'),
 		'empresa'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Empresa'),
-		'slogan'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Sogan'),
-		'descricao'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Descricao'),
+		'slogan'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Slogan'),
+		'descricao'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Descrição'),
 		'email'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'E-mail'),
+		'endereco'=>array('type'=>'text','ckeditor'=>1,'label'=>'Endereço'),
 		'facebook'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'Facebook'),
-		'instagram'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'Instagram'),
+		'twitter'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'Twitter'),
+		'linkedin'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'linkedIn'),
+
 		);
 		//Instalando o modulo
 		$this->install();
@@ -93,7 +96,7 @@ class Modulos extends CI_Controller{
 		$_SESSION['modulo']['table'] = 'fotos';
 		$_SESSION['modulo']['pk'] = 'id_foto';
 		$_SESSION['modulo']['anexada'] = '';
-		$_SESSION['modulo']['extensao'] = array();
+		$_SESSION['modulo']['extensao'] = array('galerias'=>'Fotos');
 
 		//Definindo os campos da tabela
 		$_SESSION['modulo']['fields'] =
@@ -102,7 +105,7 @@ class Modulos extends CI_Controller{
 		 'nome'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'nome'),
 		 'imagem'=>array('type'=>'img','label'=>'Imagem'),
 		 'texto'=>array('type'=>'text','ckeditor'=>1,'label'=>'Texto'),
-		 'galeria'=>array('type'=>'fk','table_fk'=>'modelo','fk_id'=>'id_modelo','fk_text'=>'titulo','label'=>'Modelo')
+		 'galeria'=>array('type'=>'fk','table_fk'=>'galerias','fk_id'=>'id_galeria','fk_text'=>'galeria','label'=>'Fotos')
 		);
 
 		//Instalando o modulo
@@ -120,12 +123,14 @@ class Modulos extends CI_Controller{
 		$_SESSION['modulo']['pk'] = 'id_galeria';
 		$_SESSION['modulo']['anexada'] = '';
 		$_SESSION['modulo']['extensao'] = array();
+		$_SESSION['modulo']['pai'] = @$_GET['pai'];
 
 		//Definindo os campos da tabela
 		$_SESSION['modulo']['fields'] =
 		array(
 		'id_galeria'=>array('type'=>'pk','label'=>'Nº'),
-		'descricao'=>array('type'=>'varchar','size'=>200,'label'=>'Descrição'),
+		'imagem'=>array('type'=>'img','label'=>'Imagem Capa'),
+		'titulo'=>array('type'=>'varchar','size'=>200,'label'=>'Título'),
 		);
 		//Instalando o modulo
 		$this->install();
