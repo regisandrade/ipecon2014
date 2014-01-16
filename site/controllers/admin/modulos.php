@@ -90,51 +90,49 @@ class Modulos extends CI_Controller{
 		redirect(base_admin('controle/listar'));
 	}
 
-	public function fotos(){
-		$_SESSION['modulo'] = array();
-		$_SESSION['modulo']['modulo']  = 'fotos';
-		$_SESSION['modulo']['table'] = 'fotos';
-		$_SESSION['modulo']['pk'] = 'id_foto';
-		$_SESSION['modulo']['anexada'] = '';
-		$_SESSION['modulo']['extensao'] = array('galerias'=>'Fotos');
-
-		//Definindo os campos da tabela
-		$_SESSION['modulo']['fields'] =
-		array(
-		 'id_foto'=>array('type'=>'pk','label'=>'Nº'),
-		 'nome'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'nome'),
-		 'imagem'=>array('type'=>'img','label'=>'Imagem'),
-		 'texto'=>array('type'=>'text','ckeditor'=>1,'label'=>'Texto'),
-		 'galeria'=>array('type'=>'fk','table_fk'=>'galerias','fk_id'=>'id_galeria','fk_text'=>'galeria','label'=>'Fotos')
-		);
-
-		//Instalando o modulo
-		$this->install();
-		//ir para controlador
-
-		redirect(base_admin('controle/listar'));
-	}
-
-
 	public function galerias(){
 		$_SESSION['modulo'] = array();
 		$_SESSION['modulo']['modulo']  = 'galerias';
 		$_SESSION['modulo']['table'] = 'galerias';
 		$_SESSION['modulo']['pk'] = 'id_galeria';
 		$_SESSION['modulo']['anexada'] = '';
+		$_SESSION['modulo']['extensao'] = array('fotos'=>'Fotos');
+
+		//Definindo os campos da tabela
+		$_SESSION['modulo']['fields'] =
+		array(
+		'id_galeria'=>array('type'=>'pk','label'=>'Nº'),
+		//'imagem'=>array('type'=>'img','label'=>'Imagem Capa'),
+		'titulo'=>array('type'=>'varchar','size'=>200,'label'=>'Título'),
+		);
+		//Instalando o modulo
+		$this->install();
+		//ir para controlador
+		redirect(base_admin('controle/listar'));
+	}
+
+	public function fotos(){
+		$_SESSION['modulo'] = array();
+		$_SESSION['modulo']['modulo']  = 'fotos';
+		$_SESSION['modulo']['table'] = 'fotos';
+		$_SESSION['modulo']['pk'] = 'id_foto';
+		$_SESSION['modulo']['anexada'] = 'galerias';
 		$_SESSION['modulo']['extensao'] = array();
 		$_SESSION['modulo']['pai'] = @$_GET['pai'];
 
 		//Definindo os campos da tabela
 		$_SESSION['modulo']['fields'] =
 		array(
-		'id_galeria'=>array('type'=>'pk','label'=>'Nº'),
-		'imagem'=>array('type'=>'img','label'=>'Imagem Capa'),
-		'titulo'=>array('type'=>'varchar','size'=>200,'label'=>'Título'),
+		 'id_foto'=>array('type'=>'pk','label'=>'Nº'),
+		 //'nome'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'nome'),
+		 'foto'=>array('type'=>'img','label'=>'Foto'),
+		 //'texto'=>array('type'=>'text','ckeditor'=>1,'label'=>'Texto')
 		);
+
 		//Instalando o modulo
 		$this->install();
 		//ir para controlador
+
 		redirect(base_admin('controle/listar'));
 	}
 
