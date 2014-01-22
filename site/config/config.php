@@ -15,7 +15,7 @@
 |
 */
 
-$config['base_url']	= 'http://ipecon.com.br/2014/';
+$config['base_url']	= 'http://localhost/ipecon2014/';
 
 $config['folder_admin']	= 'admin';
 
@@ -23,7 +23,7 @@ $config['modulos'] = array(
                     'configuracao' => 'Configuração',
                     'banners' => 'Banners',
                     'empresa' => 'Empresa',
-                    'noticias'  => 'Noticias',
+                    'noticias'  => 'Notícias',
                     'galerias'  => 'Galeria de fotos',
                     'descricaoCursos' => 'Descrição dos cursos',
                );
@@ -32,7 +32,7 @@ $config['menu'] = array(
                     'configuracao' => 'Configuração',
                     'banners' => 'Banners',
                     'empresa' => 'Empresa',
-                    'noticias'  => 'Noticias',
+                    'noticias'  => 'Notícias',
                     'galerias'  => 'Galerias de foto',
                     'descricaoCursos' => 'Descrição dos cursos',
                );

@@ -82,6 +82,7 @@ h1 a{
 	}
 #info_objeto img{
 	margin:3px 0;
+	width: 150px;
 	}	
 #info_objeto a{
 	color:#333;
@@ -445,9 +446,24 @@ input.button{
 	font-size:13px;
 	font-weight:bold;
 	}
-.page-paginacao a{text-decoration:none;}	
-	
-	
-	
-		
-							
+.page-paginacao a{text-decoration:none;}
+
+/************ MENU ****************/
+.conteiner{
+	padding:10px;
+}
+#menu{
+	background:#000;
+}	
+#info_admin h3{
+	color:#000;
+}
+#info_admin span{
+	color:#000;
+}
+#menu_conteudo #mymenu li{
+	background:#000;
+}
+#menu_conteudo #mymenu li:hover ul li a{
+	background:#000;
+}

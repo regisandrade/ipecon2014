@@ -1,19 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
 <title>Login</title>
 
 <style>
 body{
 	margin:0;
 	padding:0;
-	}
+}
 #topo{
 	background:#f3f3f3;
 	padding:30px 10px;
 	border-bottom:1px solid #E5E5E5;
-	}
+}
+#topo img{
+	width: 170px;
+}
 
 #login{
 	width:300px;
@@ -78,34 +82,50 @@ width:300px;
 margin-left:30px;
 padding:4px;	
 }
-			
+
+.control-group{
+	width: 350px;
+	margin-left: 120px;
+	background-color: #f3f3f3;
+	margin-top: 25px;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	height: 200px;
+}
+.controls{
+	margin-top: 20px;
+	margin-left: 20px !important;
+}
+
 </style>
 </head>
 
 <body>
-<div id="topo">
-<img src="<?php echo base_url()?>arquivoadmin/imagem/objeto.png" />
-</div>
-<div id="error"><?php echo validation_errors(); if(isset($error)){echo $error;}?></div>
-<div id="login">
-<form id="form1" name="form1" method="post" action="">
+	<div id="topo">
+		<img src="<?php echo base_url()?>arquivoadmin/imagem/logo.png" />
+	</div>
+	<div id="error"><?php echo validation_errors(); if(isset($error)){echo $error;}?></div>
 
-<p>E-mail:</p>
-<p>
-  <input type="text" name="login"  />
-</p>
-<p>Senha:</p>
-<p>
-  <input type="password" name="senha" />
-</p>
-<p>
-  <input type="submit" id="bottom" name="" value="Entrar" />
-</p>
-</form>
-<br />
-<p><a target="_blank" href="http://www.objetocomunicacao.com.br/" >Não consegue entrar?</a></p>
-</div>
-
+	<form id="form1" name="form1" method="post" action="" class="form-horizontal">
+		<div class="control-group">
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-user"></i></span>
+					<input class="span2" name="login" id="inputIcon" type="text" placeholder="Sua senha">
+				</div>
+			</div>
+			<div class="controls">
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-envelope"></i></span>
+					<input class="span2" name="senha" id="inputIcon" type="text" placeholder="Seu e-Mail">
+				</div>
+			</div>
+			<div class="controls">
+				<button type="submit" class="btn btn-primary">Entrar</button>
+			</div>
+			
+		</div>
+	</form>
 
 </body>
 </html>
