@@ -1,5 +1,5 @@
 <?php
- verifica_usuario_logado();	
+ verifica_usuario_logado();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -9,18 +9,18 @@
 
 	<link href="<?php echo base_url("arquivoadmin/css/layout.css");?>" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="<?php echo base_url();?>arquivoadmin/validar/css/validationEngine.jquery.css" type="text/css"/>
-	<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
-	<link  rel="shortcut icon" href="<?php echo base_url();?>/public/imagem/layout/fivecon.png" />   
+	<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.min.css"/>
+	<link  rel="shortcut icon" href="<?php echo base_url();?>/public/imagem/layout/fivecon.png" />
 	<link rel="stylesheet" href="<?php echo base_url()?>arquivoadmin/jquery-ui/css/ui-lightness/jquery-ui-1.9.2.custom.css" />
 
 	<script src="<?php echo base_url()?>arquivoadmin/jquery-ui/js/jquery-1.8.3.js"></script>
 	<script src="<?php echo base_url()?>arquivoadmin/jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
-	<link rel="stylesheet" href="/resources/demos/style.css" />
+
 	<script>
 	$(function(){
 		$(".datepicker").datepicker({"dateFormat":'yy-mm-dd'});
 	});
-	</script>   
+	</script>
 	<script src="<?php echo base_url();?>arquivoadmin/validar/js/languages/jquery.validationEngine-pt_BR.js" type="text/javascript" charset="utf-8">
 	</script>
 	<script src="<?php echo base_url();?>arquivoadmin/validar/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
@@ -57,7 +57,7 @@
 			<ul id="mymenu">
 				<li><?php echo gerar_link(array(1,2),base_admin(),'Conteúdo')?>
 					<ul>
-					<?php 
+					<?php
 					foreach($this->config->config['menu'] as $modulo=> $descricao){
 					?>
 						<li><?php echo gerar_link(array(1,2),base_admin('modulos/'.$modulo),$descricao)?></li>
@@ -74,13 +74,13 @@
 		</div>
 	</div>
 	<div id="geral2">
-		<?php 
+		<?php
 		if(isset($pagina)){
 			$this->load->view($this->config->config['folder_admin'].'/'.$pagina."_view");
 		}
 		?>
-		<script type="text/javascript" src="<?php echo base_url()?>arquivoadmin/ckeditor/ckeditor.js"></script> 
-		<script type="text/javascript" src="<?php echo base_url()?>arquivoadmin/ckeditor/adapters/jquery.js"></script> 
+		<script type="text/javascript" src="<?php echo base_url()?>arquivoadmin/ckeditor/ckeditor.js"></script>
+		<script type="text/javascript" src="<?php echo base_url()?>arquivoadmin/ckeditor/adapters/jquery.js"></script>
 		<script type="text/javascript">
 		<!--
 		$('#texto').ckeditor({
@@ -108,7 +108,7 @@
 		//-->
 		</script>
 	</div>
-	 
+
 	<script type="text/javascript">
 		var id_imagem = '';
 		var field_imagem = '';
@@ -124,10 +124,10 @@
 		function abrir_gerenciador(_id_imagem,_field_imagem){
 			id_imagem = _id_imagem;
 			field_imagem = _field_imagem;
-			window.open('<?php echo base_admin('imagens/configura/')?>','Gerenciador','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=1000,height=450,left=' + ((screen.width - 800)/ 2) + ',top=' + (screen.height - 600) / 2+''); 
+			window.open('<?php echo base_admin('imagens/configura/')?>','Gerenciador','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=1000,height=450,left=' + ((screen.width - 800)/ 2) + ',top=' + (screen.height - 600) / 2+'');
 		}
 	</script>
- 
+
 </body>
 </html>
 

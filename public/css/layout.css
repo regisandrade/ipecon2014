@@ -1,14 +1,12 @@
 body{
-    padding:0;
-	margin:0;
-	background:#FFF;
-	font-family: 'Advent Pro', sans-serif;
+  padding:0;
+  margin:0;
+  background:#FFF;
+  font-family: Verdana;
 }
-
-
 img{
 	border:none;
-	padding:0; 
+	padding:0;
 	margin: 0;
 }
 
@@ -47,7 +45,7 @@ img{
 	width:100%;
 	height:545px;
 	background:url(../imagem/layout/fundo-banner.png) no-repeat top;
-	
+
 }
 
 .logo-marca{
@@ -56,7 +54,7 @@ img{
 	left:0px;
 	width:164px;
 	height:199px;
-	
+
 }
 
 #header-logomarca-menu{
@@ -72,7 +70,7 @@ img{
 	margin:0 auto;
 	height:240px;
 	position:relative;
-	}	
+	}
 .menu-principal{
 	background:url(../imagem/layout/menu-principal.fw.png) no-repeat;
 	position:absolute;
@@ -209,7 +207,7 @@ img{
 }
 
 .titulo-noticia-meio{
-    
+
 }
 
 .dta {

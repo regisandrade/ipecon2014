@@ -2,7 +2,7 @@
 /* CSS Document */
 
 a{
- color:#5199C4;	
+ color:#5199C4;
 }
 a:focus{border:none;}
 img{
@@ -40,11 +40,11 @@ body{
 	}
 h1{
 	font-size:15px;
-	}	
+	}
 h1 a{
 	text-decoration:none;
-	}		
-	
+	}
+
 #geral{
 	width:97%;
 	height:107px;
@@ -63,7 +63,7 @@ h1 a{
 	top:0;
 	left:0;
 	}
-	
+
 #info_admin h3{
 	font:bold 25px Arial, Helvetica, sans-serif;
 	margin:4px 0;
@@ -71,7 +71,7 @@ h1 a{
 #info_admin span{
 	font:14px Arial, Helvetica, sans-serif;
 	}
-	
+
 #info_objeto{
 	position:absolute;
 	right:0;
@@ -83,14 +83,14 @@ h1 a{
 #info_objeto img{
 	margin:3px 0;
 	width: 150px;
-	}	
+	}
 #info_objeto a{
 	color:#333;
 	text-decoration:none;
 	}
 #info_objeto a:hover{
 	color:#06F;
-	}	
+	}
 
 #menu_conteudo {
 width: 100%;
@@ -167,8 +167,8 @@ background:#2580a2 !important; /* Cor das sub-casas ao passar o cursor */
 color:#ffffff;
 text-decoration:none;
 }
-	
-			 
+
+
 #geral2{
 	width:97%;
 	min-height:370px;
@@ -188,7 +188,7 @@ text-decoration:none;
 	font:14px Arial, Helvetica, sans-serif;
 	position:relative;
 	}
-	
+
 tr#box td{
 	border-bottom:2px solid #d9d9d9;
 	background:#f7f7f7;
@@ -201,7 +201,7 @@ tr#box td{
 	font:14px Arial, Helvetica, sans-serif;
 	position:relative;
 	}
-	
+
 #box3{
 	margin:4px;
 	padding:8px;
@@ -212,9 +212,9 @@ tr#box td{
 	-moz-border-radius: 5px; /* Para Firefox */
     -webkit-border-radius: 5px; /*Para Safari e Chrome */
     border-radius: 5px; /* Para Opera 10.5+*/
-	}	
+	}
 
-	
+
 #box4{
 	margin:4px;
 	padding:8px;
@@ -224,7 +224,7 @@ tr#box td{
 	position:relative;
 	color:#FFF;
 	}
-	
+
 #box5{
 	margin:4px;
 	padding:8px;
@@ -235,8 +235,8 @@ tr#box td{
 	-moz-border-radius: 5px; /* Para Firefox */
     -webkit-border-radius: 5px; /*Para Safari e Chrome */
     border-radius: 5px; /* Para Opera 10.5+*/
-	}		
-	
+	}
+
 #box strong{
 	display:block;
 	font:bold 15px Arial, Helvetica, sans-serif;
@@ -247,7 +247,7 @@ tr#box td{
 	font:17px Arial, Helvetica, sans-serif;
 	padding: 7px 0 9px 37px;
 	background:url(../imagem/h1.png) no-repeat left;
-	}	
+	}
 .tagrande{
 	width:953px;
 	}
@@ -255,7 +255,7 @@ tr#box td{
 	position:absolute;
 	top:5px;
 	right:5px;
-	}	
+	}
 #rodape{
 	width:100%;
 	height:100px;
@@ -263,28 +263,28 @@ tr#box td{
 	}
 #button{
 	cursor:pointer;
-	}					 
+	}
 #historico{
 	padding:5px;
 	border-bottom:1px dashed #d0d0d0;
-	}	
+	}
 .pagination a{
 	padding: 0 4px;
 	}
-	
+
 .settings-title{
 	border-bottom:1px dotted #d9d9d9 !important;
 	font:bold 13px arial;
 	padding:15px 0;
 	width:150px !important;
-	}	
+	}
 .settings-field{
 	border-bottom:1px dotted #d9d9d9 !important;
 	}
 .settings-field input[type='text']{
 	border:1px solid #CCC;
 	}
-	
+
 .forms-table{
 	border:1px solid #d9d9d9;
 	font-size:14px;
@@ -293,11 +293,11 @@ tr#box td{
 .row-form td{
 	border-right:1px dashed #f0f0f0;
 	border-bottom:1px solid #d9d9d9;
-	}	
+	}
 .row-form td a{
 	text-decoration:none;
-	}	
-	
+	}
+
 .cabecalho{
 	border-bottom:1px solid #d9d9d9;
 	padding:10px;
@@ -314,28 +314,28 @@ tr#box td{
 .form-filhos{
 	background:#F8FAFC;
 	}
-		
+
 .form-filhos td{
 	border:none;
-	}	
+	}
 .form-filhos a{
 	text-decoration:none;
 	font-size:18px;
 	color:#066;
-	}	
+	}
 .cabecalho a:hover{
 	text-decoration:underline;
-	}		
+	}
 .cab-esquerda{
 	height:20px;
 	width:47%;
 	float:left;
-	}		
+	}
 .cab-direita{
 	float:right;
 	width:48%;
 	text-align:right;
-	}	
+	}
 
 .form-novo #box2{
 	 background:none;
@@ -349,18 +349,18 @@ tr#box td{
 	padding:10px;
 	font-size:14px;
 	font-weight:bold;
-	}	
+	}
 .form-novo .title-label{
 	color:#069;
-	}	
+	}
 
-	
+
 
 
 .marcada td{
 	background:#09F !important;
 	color:#FFF;
-	}	
+	}
 
 .title td{
 	 background:#f3f3f3;
@@ -370,8 +370,8 @@ tr#box td{
 
 .table td{
 	 font-size:13px;
-	}	
-	
+	}
+
 .buttons{
 	 border:1px solid #d9d9d9;
 	 padding:5px;
@@ -399,7 +399,7 @@ tr#box td{
 	}
 input.button{
 	font-weight:bold;
-	}	
+	}
 .button:hover{
 	color:#06C;
 	}
@@ -436,8 +436,8 @@ input.button{
 	 padding:10px;
 	 margin:5px 0;
 	 border-radius:3px;
-	}	
-	
+	}
+
 /*paginação*/
 .page-paginacao	{
 	border:1px solid #999;
@@ -454,7 +454,7 @@ input.button{
 }
 #menu{
 	background:#000;
-}	
+}
 #info_admin h3{
 	color:#000;
 }
@@ -466,4 +466,9 @@ input.button{
 }
 #menu_conteudo #mymenu li:hover ul li a{
 	background:#000;
+}
+.nomePermissao{
+  width: 180px;
+  display: block;
+  margin-top: 5px;
 }

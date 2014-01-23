@@ -1,12 +1,8 @@
 <?php
 session_start();
+
 date_default_timezone_set('America/Sao_Paulo');
 
-if(!isset($_SESSION['orcamento'])){
-$_SESSION['orcamento'] = FALSE;
-}
-
-	
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -42,7 +38,7 @@ if (defined('ENVIRONMENT'))
 		case 'development':
 			error_reporting(E_ALL);
 		break;
-	
+
 		case 'testing':
 		case 'production':
 			error_reporting(0);
