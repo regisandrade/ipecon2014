@@ -3,6 +3,7 @@
 # Ignorar arquivos específicos
 .db
 .psd
+database.php
 
 # Use curingas como
 #*~
