@@ -54,14 +54,17 @@ class Modulos extends CI_Controller{
 		'id_configuracao'=>array('type'=>'pk','label'=>'N°'),
 		'empresa'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Empresa'),
 		'slogan'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Slogan'),
-		'descricao'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'Descrição'),
+		'descricao'=>array('type'=>'text','size'=>200,'notnull'=>0,'label'=>'Descrição'),
 		'email'=>array('type'=>'varchar','size'=>200,'notnull'=>0,'label'=>'E-mail'),
 		'endereco'=>array('type'=>'text','label'=>'Endereço'),
 		'telefone_1'=>array('type'=>'varchar','size'=>15,'notnull'=>0,'label'=>'Telefone 1'),
 		'telefone_2'=>array('type'=>'varchar','size'=>15,'notnull'=>1,'label'=>'Telefone 2'),
 		'facebook'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'Facebook'),
 		'twitter'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'Twitter'),
-		'linkedin'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'linkedIn'),
+		'linkedin'=>array('type'=>'varchar','size'=>300,'notnull'=>0,'label'=>'LinkedIn'),
+		'meta_descricao'=>array('type'=>'text','label'=>'Meta Descrição'),
+		'latitude_endereco'=>array('type'=>'text','label'=>'Latitude'),
+		'longitude_endereco'=>array('type'=>'text','label'=>'Longitude'),
 
 		);
 		//Instalando o modulo

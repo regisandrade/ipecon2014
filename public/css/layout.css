@@ -238,34 +238,193 @@ a{
    text-decoration:none;
 }
 
+/********** Topo **********/
+#header-1{
+  height: 24px;
+}
+#icones-header-1{
+  width: 1024px;
+  margin: 0 auto;
+  height: 24px;
+}
+#icones-header-1 img{
+  float: right;
+  margin-left: 25px;
+  margin-top: 3px;
+}
+#header-2{
+  background: url("../imagem/layout/bg-topo.png") no-repeat;
+  width: 100%;
+  height: 68px;
+}
+#header2-conteudo{
+  width: 1024px;
+  margin: 0 auto;
+}
+#header-logo img{
+  position: relative;
+  top: -25px;
+  left: -15px;
+  float: left;
+  width: 285px;
+  height: 113px;
+}
+#header-menu{
+  position: relative;
+  float: right;
+  width: 735px;
+}
+#header-menu ul {
+  padding:0px;
+  margin:0px;
+  list-style:none;
+}
+#header-menu ul li {
+  display: inline;
+  top: 20px;
+  position: relative;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: bold;
+}
+#header-menu ul li a {
+  padding: 2px 5px;
+  display: inline-block;
+
+  /* visual do link */
+  color: #FFF;
+  text-decoration: none;
+}
+#header-menu ul li a:hover {
+  color: #FFFF26;
+}
+/********** Topo **********/
+
+/********** Banner **********/
+#banner{
+  width: 100%;
+  height: 225px;
+  background-color: #0000ff;
+}
+/********** /Banner **********/
+
+/********** Cursos **********/
+#cursos{
+  background: url("../imagem/layout/bg-cursos.png") no-repeat;
+  width: 100%;
+  height: 225px;
+}
+/********** /Cursos **********/
+
+/********** Conteúdo login-noticias-facebook **********/
+#login-noticias-facebook{
+  background: url("../imagem/layout/bg-noticia-login-facebook.png") no-repeat;
+  width: 100%;
+  height: 388px;
+}
+#conteudo-login-noticias-facebook{
+  width: 1024px;
+  height: 388px;
+  margin: 0 auto;
+  position: relative;
+  top: 65px;
+}
+#conteudo-login{
+  width: 340px;
+  height: 69px;
+  float: left;
+  position: relative;
+  border: solid 1px #000;
+}
+#conteudo-noticia{
+  width: 338px;
+  height: 69px;
+  float: left;
+  position: relative;
+}
+#conteudo-noticia span{
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: normal;
+  color: #0000EE;
+  border-bottom: 1px solid #FFF;
+  display: block;
+  width: 325px;
+}
+#conteudo-noticia img{
+  margin-right: 10px;
+}
+
+.tituloNoticia{
+  color: #FFF;
+  display: block;
+  font: normal 13px Verdana;
+  border-bottom: 1px solid #FFF;
+  height: 60px;
+  width: 325px;
+  margin: 0px;
+  float: left;
+}
+.setaNoticia{
+  background: url("../imagem/layout/seta-noticia.png") no-repeat center right;
+  height: 60px;
+  width: 13px;
+
+  float: right;
+}
+
+#conteudo-facebook{
+  width: 276px;
+  height: 270px;
+  float: right;
+  position: relative;
+  border: solid 1px #000;
+  background: url("../imagem/layout/bg-facebook.png") no-repeat;
+}
+
+/********** /Conteúdo login-noticias-facebook **********/
+
+/********** Rodape **********/
 #footer {
   float: left;
-  height: 106px;
+  height: 136px;
   position: relative;
   width: 100%;
+  background: url("../imagem/layout/bg-rodape.png") no-repeat;
 }
-
-#menu-footer {
+#conteudoRodape{
+  width: 1024px;
+  height: 136px;
+  margin: 0 auto;
+  position: relative;
+}
+#logo-ipecon{
+  background: url("../imagem/layout/logo-ipecon-rodape.png") no-repeat;
+  width: 240px;
+  height: 69px;
   float: left;
-  height: 40px;
-  margin: 60px 0 0;
-  width: 660px;
+  position: relative;
+  top: 35px;
 }
-
-#menu-footer a{
-    background: url("../imagem/layout/menu-footer-separador.png") no-repeat scroll right center rgba(0, 0, 0, 0);
-    color: #666666;
-    display: block;
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 4px 51px 2px 12px;
-}
-
-.redes-footer {
+#endereco{
   float: left;
-  margin: 60px 0 0;
+  position: relative;
+  top: 35px;
+  font-family: Verdana;
+  font-size: 13px;
+  text-align: center;
+  width: 600px;
 }
+#logo-puc{
+  background: url("../imagem/layout/logo-puc-rodape.png") no-repeat;
+  width: 161px;
+  height: 94px;
+  position: relative;
+  float: right;
+  top: 25px;
+}
+/********** /Rodape **********/
+
 #objeto {
   float: right;
   margin: 43px 0 0;

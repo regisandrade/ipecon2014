@@ -1,13 +1,21 @@
 <?php
 $config = $this->db->get('configuracao')->result();
 $config = isset($config[0])?$config[0]:0;
+define("EMPRESA", $config->empresa);
+define("EMAIL", $config->email);
+define("FACEBOOK", $config->facebook);
+define("TWITTER", $config->twitter);
+define("LINKEDIN", $config->linkedin);
+define("ENDERECO", $config->endereco);
+define("TELEFONE_1", $config->telefone_1);
+define("TELEFONE_2", $config->telefone_2);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8" />
-	<title><?php echo isset($title)?$config->empresa.' / '.$title:$config->empresa.' - '.$config->slogan?></title>
-	<meta name="author" content="Ronildo Souza/Objeto Comunicação" />
+	<title><?php echo EMPRESA ?></title>
+	<meta name="author" content="Régis Andrade - regisandrade@gmail.com" />
   <meta name="description" content="<?php  echo isset($metadescricao)?$metadescricao:$config->descricao?>">
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="<?php  echo isset($title)?$config->empresa.' - '.$title:$config->empresa.' - '.$config->slogan?>" />
@@ -20,12 +28,22 @@ $config = isset($config[0])?$config[0]:0;
 
   <link  rel="shortcut icon" href="<?php echo base_url();?>/public/imagem/layout/fivecon.png" />
 
+  <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
+
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/objeto.js" ></script>
   <script src="<?php echo base_url()?>public/script/jcarousellite_1.0.1.js"></script>
 
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <?php
   // Topo
   $this->load->view('inicio/topo_view');

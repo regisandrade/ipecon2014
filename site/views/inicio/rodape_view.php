@@ -1,11 +1,11 @@
-<?php
-$config = $this->db->get('configuracao')->result();
-$config = isset($config[0])?$config[0]:0;
-?>
 <!-- footer -->
 <div id="footer">
-  <span id="logo-ipecon">logo-ipecon</span>
-  <span id="endereco">endereço</span>
-  <span id="logo-puc">logo-puc</span>
+     <div id="conteudoRodape">
+          <span id="logo-ipecon" title="<?php echo EMPRESA?>">&nbsp;</span>
+          <span id="endereco"><?php echo nl2br(ENDERECO).'<br>'.
+          TELEFONE_1.' - '.TELEFONE_1.'<br><a href="mailto:'.EMAIL.'" target="_blank" title="Envie seu e-mail para nós.">'.
+          EMAIL.'</a>';?></span>
+          <span id="logo-puc" title="PUC-GO">&nbsp;</span>
+     </div>
 </div>
 <!-- /footer -->

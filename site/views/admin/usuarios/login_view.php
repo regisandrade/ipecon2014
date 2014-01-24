@@ -28,13 +28,13 @@ body{
 	border-bottom:1px solid #ddd;
 	border-right:1px solid #E5E5E5;
 	}
-	
+
 #login p{
 margin:10px 0;
-color:#666;	
+color:#666;
 font:15px Arial, Helvetica, sans-serif;
-}	
-		
+}
+
 #login input[type='text'],#login input[type='password']{
 	margin:2px 0;
     -moz-border-bottom-colors: none;
@@ -64,7 +64,7 @@ font:15px Arial, Helvetica, sans-serif;
 #login a{
 	font:12px Arial, Helvetica, sans-serif;
 	color:#06F;
-	}		
+	}
 #bottom{
 	background-color: #606060 !important;
     background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED) !important;
@@ -80,7 +80,7 @@ border: 1px solid #D59C8C;
 background:#FCF7F5;
 width:300px;
 margin-left:30px;
-padding:4px;	
+padding:4px;
 }
 
 .control-group{
@@ -111,19 +111,19 @@ padding:4px;
 			<div class="controls">
 				<div class="input-prepend">
 					<span class="add-on"><i class="icon-user"></i></span>
-					<input class="span2" name="login" id="inputIcon" type="text" placeholder="Sua senha">
+					<input class="span2" name="login" id="inputIcon" type="text" placeholder="Seu e-Mail">
 				</div>
 			</div>
 			<div class="controls">
 				<div class="input-prepend">
-					<span class="add-on"><i class="icon-envelope"></i></span>
-					<input class="span2" name="senha" id="inputIcon" type="text" placeholder="Seu e-Mail">
+					<span class="add-on"><i class="icon-lock"></i></span>
+					<input class="span2" name="senha" id="inputIcon" type="password" placeholder="Sua senha">
 				</div>
 			</div>
 			<div class="controls">
 				<button type="submit" class="btn btn-primary">Entrar</button>
 			</div>
-			
+
 		</div>
 	</form>
 
