@@ -16,7 +16,7 @@
           <div id="header-menu">
                <ul>
                     <li><a href="<?php echo base_url('index.php')?>">HOME</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">INSTITUCIONAL</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>index.php">EMPRESA</a></li>
                     <li><a href="<?php echo base_url('index.php')?>">CURSOS</a></li>
                     <li><a href="<?php echo base_url('index.php')?>">PROFESSORES</a></li>
                     <li><a href="<?php echo base_url('index.php')?>">DEPOIMENTOS</a></li>
