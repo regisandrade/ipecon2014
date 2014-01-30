@@ -9,6 +9,9 @@ define("LINKEDIN", $config->linkedin);
 define("ENDERECO", $config->endereco);
 define("TELEFONE_1", $config->telefone_1);
 define("TELEFONE_2", $config->telefone_2);
+define("LATITUDE", $config->latitude_endereco);
+define("LONGITUDE", $config->longitude_endereco);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,6 +33,8 @@ define("TELEFONE_2", $config->telefone_2);
 
   <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
 
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6qo-nK1_R_tTUXTFeyHfyyIVYJg2IoVw&amp;sensor=false"></script>
+
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/objeto.js" ></script>
   <script src="<?php echo base_url()?>public/script/jcarousellite_1.0.1.js"></script>
@@ -49,7 +54,7 @@ define("TELEFONE_2", $config->telefone_2);
   $this->load->view('inicio/topo_view');
   // Meio
   if(isset($pagina)){
-    $this->load->view("{$pagina}_view",array('config'=>$config));
+    $this->load->view("{$pagina}_view");
   }else{
     $this->load->view("inicio/meio_view");
   }
