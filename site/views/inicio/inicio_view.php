@@ -48,7 +48,11 @@ define("TELEFONE_2", $config->telefone_2);
   // Topo
   $this->load->view('inicio/topo_view');
   // Meio
-  $this->load->view("inicio/meio_view");
+  if(isset($pagina)){
+    $this->load->view("{$pagina}_view",array('config'=>$config));
+  }else{
+    $this->load->view("inicio/meio_view");
+  }
   // Rodape
   $this->load->view('inicio/rodape_view');
 ?>

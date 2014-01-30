@@ -83,7 +83,7 @@
 		<script type="text/javascript" src="<?php echo base_url()?>arquivoadmin/ckeditor/adapters/jquery.js"></script>
 		<script type="text/javascript">
 		<!--
-		$('#texto').ckeditor({
+		$('.texto').ckeditor({
 			filebrowserBrowseUrl: '<?php echo base_admin('imagens/set_ckeditor')?>',
 			filebrowserImageBrowseUrl: '<?php echo base_admin('imagens/set_ckeditor')?>',
 			filebrowserFlashBrowseUrl: '<?php echo base_admin('imagens/set_ckeditor')?>',

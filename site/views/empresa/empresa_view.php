@@ -1,10 +1,10 @@
 <div id="pagina-interna">
 	<div class="internaCtrl">
-		<?php foreach($empresa as $e) { ?>
+        <?php foreach($empresa as $e) { ?>
         <div class="titulo" style="margin:0 0 60px 0;">
              <?php echo  $e->titulo; ?>
         </div>
-        
+
         <div class="texto">
              <?php echo imagensLightBox($e->texto); ?>
         </div>

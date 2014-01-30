@@ -16,18 +16,17 @@
           <div id="header-menu">
                <ul>
                     <li><a href="<?php echo base_url('index.php')?>">HOME</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>index.php">EMPRESA</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">CURSOS</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">PROFESSORES</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">DEPOIMENTOS</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">LINKS</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">ARTIGOS</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">FOTOS</a></li>
-                    <li><a href="<?php echo base_url('index.php')?>">LOCALIZAÇÃO</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/empresa">EMPRESA</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/cursos">CURSOS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/professores">PROFESSORES</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/depoimentos">DEPOIMENTOS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/links">LINKS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/artigos">ARTIGOS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/fotos">FOTOS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/localizacao">LOCALIZAÇÃO</a></li>
                </ul>
           </div>
      </div>
   </div>
-
 </div>
 <!-- /header -->

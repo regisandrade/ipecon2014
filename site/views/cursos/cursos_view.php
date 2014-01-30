@@ -1,10 +1,11 @@
 <div id="pagina-interna">
-	<div class="internaCtrl">
-          <div class="titulo">
-               Coleções
-          </div>
-          <div class="tabela">
-              <div class="listCategory">
+		<div class="internaCtrl">
+            <div class="titulo">   
+              Coleções <img class="divisao" src="<?php echo base_url(); ?>public/imagem/layout/menu-footer-separador.png" /> <?php echo $descricao->titulo; ?>
+            </div>
+  
+            <div class="tabela">
+              	<div class="listCategory">
               		<?php foreach($modelo as $m){ ?> 
                        <a class="menu-produtos-interno" href="<?php echo base_url('index.php/colecao/produto/'.$m->id_modelo)?>"><?php echo $m->titulo;  ?></a><br />
                     <?php } ?>
@@ -18,11 +19,8 @@
                   </li>
                 <?php } ?>
               </ul>
-              
-         </div> 
-      </div>  
-              
-             
+            </div>
+        </div>
             <!-- /foto produto --> 
 </div>
 
