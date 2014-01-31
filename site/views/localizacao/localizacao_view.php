@@ -1,8 +1,10 @@
  <style type="text/css">
    #mapa{
-      width: 445px;
-      height:350px;
-      border:1px solid #000
+      width: 1010px;
+      height: 450px;
+      border:1px solid #000;
+      position: relative;
+      top: 100px;
    }
 </style>
 <script type="text/javascript">
@@ -24,7 +26,7 @@
 </script>
 <div id="pagina-interna">
   <div class="internaCtrl">
-    <div class="titulo">Localização</div>
+    <div class="titulo" style="margin:0 0 60px 0;">Localização</div>
     <div class="texto">
       <div id="mapa"></div>
     </div>

@@ -50,7 +50,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
         ?>
       </div>
       <div id="conteudo-facebook">
-        <div class="fb-like" data-href="https://www.facebook.com/pages/Ipecon/277205629045834?fref=ts" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        <div class="fb-like-box" data-href="https://www.facebook.com/pages/Ipecon/277205629045834?fref=ts" data-width="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
       </div>
     </div>
   </div>

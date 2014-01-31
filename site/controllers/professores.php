@@ -5,7 +5,9 @@ class Professores extends CI_Controller {
 	{
 		$data['pagina'] = 'professores/professores';
 
-		$data['produto'] = $this->db->get('professores')->result();
+		$data['professores'] = $this->db
+								->order_by('Nome')
+								->get('professor')->result();
 
 		$this->load->view('inicio/inicio_view',$data);
 	}

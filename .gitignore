@@ -1,9 +1,10 @@
 # Arquivo utilizado para ignorar arquivos a serem enviados para o repositório
 
 # Ignorar arquivos específicos
-.db
-.psd
+*.db
+*.psd
 database.php
+config.php
 
 # Use curingas como
 #*~
