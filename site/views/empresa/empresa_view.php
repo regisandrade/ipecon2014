@@ -1,7 +1,7 @@
 <div id="pagina-interna">
 	<div class="internaCtrl">
         <?php foreach($empresa as $e) { ?>
-        <div class="titulo" style="margin:0 0 60px 0;">
+        <div class="titulo">
              <?php echo  $e->titulo; ?>
         </div>
 

@@ -26,7 +26,7 @@
 </script>
 <div id="pagina-interna">
   <div class="internaCtrl">
-    <div class="titulo" style="margin:0 0 60px 0;">Localização</div>
+    <div class="titulo">Localização</div>
     <div class="texto">
       <div id="mapa"></div>
     </div>

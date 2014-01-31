@@ -1,10 +1,10 @@
 <div id="pagina-interna">
 	<div class="internaCtrl">
-		<div class="titulo" style="margin:0 0 60px 0;">Artigos</div>
+		<div class="titulo">Artigos</div>
 		<div class="texto">
 			<ul>
-			<?php foreach($artigos as $e) { 
-				echo "<li>".$e->Descricao."</li>"; 
+			<?php foreach($artigos as $e) {
+				echo "<li>".$e->Descricao."</li>";
 			} ?>
 			</ul>
 		</div>

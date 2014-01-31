@@ -17,11 +17,12 @@
 }
 
 #pagina-interna {
-  float: left;
-  font-family: 'Advent Pro',sans-serif;
-  margin: -70px 0 0;
-  position: relative;
-  width: 100%;
+    float: left;
+    font-family: 'Advent Pro',sans-serif;
+    margin: 0;
+    min-height: 550px;
+    position: relative;
+    width: 100%;
 }
 
 .bloco{
@@ -35,14 +36,11 @@
 
 .titulo {
   color: #666;
-  float: left;
   font-size: 30px;
   font-weight: bold;
-  margin-top: -25px;
   padding: 0px;
-  position: relative;
   width: 100%;
-  top: 45px;
+  margin:0 0 30px 0;
 }
 
 .contato-titulo {
@@ -55,8 +53,24 @@
 .texto{
   font-size: 15px;
   color:#666;
-  margin-bottom: 110px;
+
 }
+
+/****** Lista personalisada ******/
+.texto ul {
+  border: medium none;
+  border-radius: 0;
+  margin: 30px 1px;
+  width: 95%;
+}
+.texto ul li {
+  list-style-type: none;
+  border-radius: 9px;
+  float: left;
+  height: 30px;
+  width: 33%;
+}
+/****** /Lista personalisada ******/
 
 /* Coleções */
 
@@ -133,4 +147,31 @@ textarea{
   float: left;
   width: 100%;
   display: block;
+}
+
+#conteudo-login .controls{
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+#conteudo-login .span2{
+  width: 250px;
+}
+#conteudo-login h4{
+  color: #FFF;
+  margin: 0px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+#conteudo-login .btn{
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+#conteudo-login a{
+  color: #FFF;
+  font-size: 13px;
+}
+#conteudo-login a:hover{
+  color: #FFF;
+  font-size: 13px;
+  text-decoration:underline;
 }

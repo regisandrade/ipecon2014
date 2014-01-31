@@ -1,6 +1,6 @@
 <?php
 $noticias = $this->db->order_by("id_noticia","desc")
-                 ->limit(3)
+                 ->limit(4)
                  ->get('noticias')
                  ->result();
 ?>
@@ -18,7 +18,8 @@ $noticias = $this->db->order_by("id_noticia","desc")
   <!-- login-noticias-facebook -->
   <div id="login-noticias-facebook">
     <div id="conteudo-login-noticias-facebook">
-      <div id="conteudo-login"><strong>PORTAL DO ALUNO</strong>
+      <div id="conteudo-login">
+        <h4>PORTAL DO ALUNO</h4>
         <!-- Formulario login -->
         <form id="form1" name="form1" method="post" action="" class="form-horizontal">
           <div class="control-group">
@@ -35,7 +36,8 @@ $noticias = $this->db->order_by("id_noticia","desc")
               </div>
             </div>
             <div class="controls">
-              <button type="submit" class="btn btn-primary">Entrar</button>
+              <button type="submit" class="btn btn-large btn-block btn-warning">Efetuar Login</button>
+              <a href="javascript:void(0)" onclick="">Esqueceu sua senha?</a>
             </div>
           </div>
         </form>
@@ -43,11 +45,13 @@ $noticias = $this->db->order_by("id_noticia","desc")
       </div>
       <div id="conteudo-noticia">
         <span><img src="<?php echo base_url(); ?>public/imagem/layout/icon-noticias.png" />Notícias</span>
-        <?php
-        foreach ($noticias as $noticia) {
-          echo '<div class="tituloNoticia">'.$noticia->titulo.'</div><div class="setaNoticia"></div>';
-        }
-        ?>
+        <ul>
+          <?php
+          foreach ($noticias as $noticia) {
+            echo '<li><a href="#">'.substr($noticia->titulo,0,91).'</a></li>';
+          }
+          ?>
+        </ul>
       </div>
       <div id="conteudo-facebook">
         <div class="fb-like-box" data-href="https://www.facebook.com/pages/Ipecon/277205629045834?fref=ts" data-width="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>

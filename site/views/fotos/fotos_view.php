@@ -1,6 +1,6 @@
 <div id="pagina-interna">
   <div class="internaCtrl">
-    <div class="titulo" style="margin:0 0 60px 0;">Fotos</div>
+    <div class="titulo">Fotos</div>
     <?php foreach($fotos as $e) { ?>
       <div class="texto">
         <?php echo $e->texto; ?>

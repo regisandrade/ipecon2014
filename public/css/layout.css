@@ -146,7 +146,7 @@ img{
 }
 
 #produtos-colecao{
-    width:680px;
+  width:680px;
 	height:260px;
 	position:absolute;
 	top: 0px;
@@ -154,7 +154,7 @@ img{
 }
 
 .colecao{
-    position:absolute;
+  position:absolute;
 	top:0px;
 	left: 100px;
 	color:#666666;
@@ -334,7 +334,6 @@ a{
   height: 69px;
   float: left;
   position: relative;
-  border: solid 1px #000;
 }
 #conteudo-noticia{
   width: 338px;
@@ -349,28 +348,40 @@ a{
   color: #0000EE;
   border-bottom: 1px solid #FFF;
   display: block;
-  width: 325px;
+  width: 365px;
 }
 #conteudo-noticia img{
   margin-right: 10px;
 }
 
-.tituloNoticia{
-  color: #FFF;
-  display: block;
-  font: normal 13px Verdana;
-  border-bottom: 1px solid #FFF;
-  height: 60px;
-  width: 325px;
+#conteudo-noticia ul{
+  width: 95%;
   margin: 0px;
-  float: left;
 }
+#conteudo-noticia ul li{
+  list-style-type: none;
+  border-bottom: 1px solid #FFF;
+  height: 53px;
+  width: 365px;
+}
+#conteudo-noticia ul li a{
+  font-size: 14px;
+  color: #FFF;
+}
+#conteudo-noticia ul li a:hover{
+  font-size: 14px;
+  color: #FFF;
+  text-decoration: underline;
+}
+
 .setaNoticia{
   background: url("../imagem/layout/seta-noticia.png") no-repeat center right;
-  height: 60px;
+  height: 53px;
   width: 13px;
-
   float: right;
+  position: relative;
+  width: 13px;
+  left: -14px;
 }
 
 #conteudo-facebook{
@@ -378,7 +389,6 @@ a{
   height: 270px;
   float: right;
   position: relative;
-  border: solid 1px #000;
   background: url("../imagem/layout/bg-facebook.png") no-repeat;
 }
 
