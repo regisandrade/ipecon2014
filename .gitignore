@@ -1,14 +1,50 @@
 # Arquivo utilizado para ignorar arquivos a serem enviados para o repositório
 
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
 # Ignorar arquivos específicos
-*.db
-*.psd
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.db
+.psd
 database.php
 config.php
 
 # Use curingas como
-#*~
-#*.swp
+*~
+*.swp
 
 # Ignorar todos os diretórios e arquivos em um diretório.
 cache/**/*
