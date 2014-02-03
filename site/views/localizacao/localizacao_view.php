@@ -30,4 +30,5 @@
     <div class="texto">
       <div id="mapa"></div>
     </div>
+  </div>
 </div>
