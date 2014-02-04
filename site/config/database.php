@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'servidor';
 $db['default']['username'] = 'root';
-$db['default']['password'] = '123';
-$db['default']['database'] = 'ipecon1_ipecon';
+$db['default']['password'] = 'vida186.202';
+$db['default']['database'] = 'ipecon';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

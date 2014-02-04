@@ -11,6 +11,8 @@
 		$_SESSION['modulo']['anexada'] = 'produtos';
 		$_SESSION['modulo']['extensao'] = array();
 		$_SESSION['modulo']['pai'] = @$_GET['pai'];
+		$_SESSION['modulo']['order'] = 'coluna'; // Coluna utilizada para ordenar a consulta
+		$_SESSION['modulo']['order_fk'] = 'coluna_fk'; // Coluna utilizada para ordenar a consulta FK
 
 		//Definindo os campos da tabela
 		$_SESSION['modulo']['fields'] =
@@ -191,12 +193,15 @@ class Modulos extends CI_Controller{
 		$_SESSION['modulo']['pk'] = 'id_descricao_curso';
 		$_SESSION['modulo']['anexada'] = '';
 		$_SESSION['modulo']['extensao'] = array();
+		$_SESSION['modulo']['order_fk'] = 'Nome';
+		$_SESSION['modulo']['where_fk'] = 'Status = 1';
 
 		//Definindo os campos da tabela
 		$_SESSION['modulo']['fields'] =
 		array(
 			'id_descricao_curso'=>array('type'=>'pk','label'=>'Nº'),
-			'nome'=>array('type'=>'varchar','size'=>200,'label'=>'Nome'),
+			'codg_curso_descricao'=>array('type'=>'fk','table_fk'=>'curso','fk_id'=>'Codg_Curso','fk_text'=>'Nome','label'=>'Curso'),
+			//'nome'=>array('type'=>'varchar','size'=>200,'label'=>'Nome'),
 			'apresentacao'=>array('type'=>'text','ckeditor'=>1,'label'=>'Apresentação'),
 			'publico'=>array('type'=>'text','ckeditor'=>1,'label'=>'Público Alvo'),
 			'datas'=>array('type'=>'text','ckeditor'=>1,'label'=>'Datas Importantes'),
@@ -218,7 +223,32 @@ class Modulos extends CI_Controller{
 		redirect(base_admin('controle/listar'));
 	}
 
-    public function instalacao(){
+	public function cursos(){
+		$_SESSION['modulo'] = array();
+		$_SESSION['modulo']['modulo']  = 'cursos';
+		$_SESSION['modulo']['table'] = 'curso';
+		$_SESSION['modulo']['pk'] = 'Codg_Curso';
+		$_SESSION['modulo']['anexada'] = '';
+		$_SESSION['modulo']['extensao'] = array();
+
+		//Definindo os campos da tabela
+		$_SESSION['modulo']['fields'] =
+		array(
+			'Codg_Curso'=>array('type'=>'pk','label'=>'Nº'),
+			'Nome'=>array('type'=>'varchar','size'=>200,'label'=>'Nome'),
+			'Qtde_Horas'=>array('type'=>'varchar','size'=>40,'label'=>'Carga Horária'),
+			'Data_Inicio'=>array('type'=>'date','size'=>200,'label'=>'Dt. Início'),
+			'Data_Fim'=>array('type'=>'date','size'=>200,'label'=>'Dt. Fim'),
+			'Status'=>array('type'=>'varchar','size'=>1,'label'=>'Status'),
+			'flagMba'=>array('type'=>'varchar','size'=>1,'label'=>'MBA?'),
+		);
+		//Instalando o modulo
+		$this->install();
+		//ir para controlador
+		redirect(base_admin('controle/listar'));
+	}
+
+	public function instalacao(){
 		$_SESSION['modulo'] = array();
 		$_SESSION['modulo']['modulo']  = 'instalacao';
 		$_SESSION['modulo']['table'] = 'instalacao';

@@ -38,9 +38,15 @@ $dados = $dados[0];
       <select <?php if(isset($f['notnull'])){echo "class='validate[required]'";}?> name="<?php echo $field?>">
         <option value="<?php echo isset($f['notnull'])?'':'0';?>">--Selecione--</option>
         <?php
-  	  $table_fks = $this->db->get($f['table_fk'])->result_array();
-  	  foreach($table_fks as $fk){
-  	  ?>
+        if(isset($info['where_fk'])){
+          $this->db->where($info['where_fk']);
+        }
+        if(isset($info['order_fk'])){
+          $this->db->order_by($info['order_fk']);
+        }
+        $table_fks = $this->db->get($f['table_fk'])->result_array();
+        foreach($table_fks as $fk){
+        ?>
         <option <?php echo $dados[$field]==$fk[$f['fk_id']]?'selected':''?> value="<?php echo $fk[$f['fk_id']]?>"><?php echo $fk[$f['fk_text']]?></option>
         <?php }?>
       </select>
