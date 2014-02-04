@@ -29,15 +29,16 @@ define("LONGITUDE", $config->longitude_endereco);
   <link href="<?php echo base_url()?>public/css/style.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url()?>public/imagem/layout/faf.png" rel="icon" />
 
-  <link  rel="shortcut icon" href="<?php echo base_url();?>/public/imagem/layout/fivecon.png" />
+  <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />
 
   <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
 
   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6qo-nK1_R_tTUXTFeyHfyyIVYJg2IoVw&amp;sensor=false"></script>
 
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
-  <script src="<?php echo base_url()?>public/script/objeto.js" ></script>
-  <script src="<?php echo base_url()?>public/script/jcarousellite_1.0.1.js"></script>
+  <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
+  <script src="<?php echo base_url()?>public/script/regras.validate.js"></script>
+
 
 </head>
 <body>

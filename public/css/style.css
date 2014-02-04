@@ -163,8 +163,8 @@ textarea{
   text-align: center;
 }
 #conteudo-login .btn{
-  font-size: 13px;
   margin-bottom: 15px;
+  width: 290px;
 }
 #conteudo-login a{
   color: #FFF;
@@ -175,3 +175,16 @@ textarea{
   font-size: 13px;
   text-decoration:underline;
 }
+
+.error{
+  margin-left: 5px;
+  color: #b94a48;
+}
+.valid{
+  color: #468847;
+  width: 24px;
+  height: 24px;
+  background: url("../imagem/layout/valid.png") no-repeat scroll center center transparent;
+  display: inline-block;
+}
+
