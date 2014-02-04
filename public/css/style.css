@@ -55,6 +55,11 @@
   color:#666;
 
 }
+.links{
+  font-size: 15px;
+  color:#666;
+
+}
 
 /****** Lista personalisada ******/
 .texto ul {
@@ -69,6 +74,21 @@
   float: left;
   height: 30px;
   width: 33%;
+}
+
+
+.links ul {
+  border: medium none;
+  border-radius: 0;
+  margin: 30px 1px;
+  width: 95%;
+}
+.links ul li {
+  list-style-type: none;
+  border-radius: 9px;
+  float: left;
+  height: 30px;
+  width: 50%;
 }
 /****** /Lista personalisada ******/
 
