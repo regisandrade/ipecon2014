@@ -54,6 +54,34 @@
   font-size: 15px;
   color:#666;
 }
+.texto label{
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.detalheCurso{
+  font-size: 15px;
+  color:#666;
+}
+.detalheCurso label{
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+   color: #1D476F;
+}
+.detalheCurso span{
+  margin-bottom: 25px;
+  display: block;
+}
+.detalheCurso a{
+  color: #1D476F;
+}
+.detalheCurso a:hover{
+  color: #FAA732;
+  text-decoration: underline;
+}
+
+
 .links{
   font-size: 15px;
   color:#666;
@@ -93,6 +121,7 @@
 }
 .cursos ul li a:hover{
   text-decoration: underline;
+  color: #FAA732;
 }
 
 .links ul {
@@ -110,6 +139,7 @@
 }
 .links ul li a:hover{
   text-decoration: underline;
+  color: #FAA732;
 }
 
 .artigos ul {
@@ -127,6 +157,7 @@
 }
 .artigos ul li a:hover{
   text-decoration: underline;
+  color: #FAA732;
 }
 /****** /Lista personalisada ******/
 

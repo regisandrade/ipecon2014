@@ -212,6 +212,8 @@ class Modulos extends CI_Controller{
 			'certificados'=>array('type'=>'text','ckeditor'=>1,'label'=>'Certificados'),
 			'duracao'=>array('type'=>'text','ckeditor'=>1,'label'=>'Duração do Curso'),
 			'numeroVagas'=>array('type'=>'text','ckeditor'=>1,'label'=>'Número de Vagas'),
+			'coordenacaogeral'=>array('type'=>'text','ckeditor'=>1,'label'=>'Coordenação Geral'),
+			'coordenacaoacademica'=>array('type'=>'text','ckeditor'=>1,'label'=>'Coordenação Acadêmica'),
 			'horario'=>array('type'=>'text','ckeditor'=>1,'label'=>'Horário das Aulas'),
 			'processo'=>array('type'=>'text','ckeditor'=>1,'label'=>'Processo Seletivo'),
 			'corpoDocente'=>array('type'=>'text','ckeditor'=>1,'label'=>'Corpo Docente'),
