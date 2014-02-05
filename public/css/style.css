@@ -53,12 +53,14 @@
 .texto{
   font-size: 15px;
   color:#666;
-
 }
 .links{
   font-size: 15px;
   color:#666;
-
+}
+.artigos{
+  font-size: 15px;
+  color:#666;
 }
 
 /****** Lista personalisada ******/
@@ -76,6 +78,22 @@
   width: 33%;
 }
 
+.cursos ul {
+  border: medium none;
+  border-radius: 0;
+  margin: 30px 1px;
+  width: 100%;
+}
+.cursos ul li {
+  list-style-type: none;
+  border-radius: 9px;
+  float: left;
+  height: 30px;
+  width: 50%;
+}
+.cursos ul li a:hover{
+  text-decoration: underline;
+}
 
 .links ul {
   border: medium none;
@@ -89,6 +107,26 @@
   float: left;
   height: 30px;
   width: 50%;
+}
+.links ul li a:hover{
+  text-decoration: underline;
+}
+
+.artigos ul {
+  border: medium none;
+  border-radius: 0;
+  margin: 30px 1px;
+  width: 95%;
+}
+.artigos ul li {
+  list-style-type: none;
+  border-radius: 9px;
+  float: left;
+  height: 30px;
+  width: 50%;
+}
+.artigos ul li a:hover{
+  text-decoration: underline;
 }
 /****** /Lista personalisada ******/
 
