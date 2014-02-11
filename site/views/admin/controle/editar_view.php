@@ -69,7 +69,7 @@ $dados = $dados[0];
     if($f['type']=='img'){
 
   	  $nome_itens = $dados[$field];
-  	  if(strpos($nome_itens,'.png')||strpos($nome_itens,'.jpg')||strpos($nome_itens,'.gif')){
+  	  if(strpos($nome_itens,'.png')||strpos($nome_itens,'.jpeg')||strpos($nome_itens,'.JPG')||strpos($nome_itens,'.jpg')||strpos($nome_itens,'.gif')){
   	   $src = $dados[$field];
   	  }else if(strpos($nome_itens,'.zip') || strpos($nome_itens,'.rar')){
   		$src = 'arquivoadmin/imagem/rar-icon.png';

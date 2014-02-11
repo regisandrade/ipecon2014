@@ -1,8 +1,14 @@
+<?php
+if (!isset($this->uri->segments[3])) {
+     echo "<div class=\"alert alert-block alert-error fade in\">
+     <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button><strong>Atenção</strong>, selecionar um curso antes de realizar a pré-inscrição.</div>";
+}
+?>
 <div id="pagina-interna">
      <div class="internaCtrl">
           <div class="titulo">Pré-Inscrição</div>
           <div class="texto">
-               <form class="form-horizontal" name="formInscricao" id="formInscricao" action="" method="POST">
+               <form class="form-horizontal" name="formInscricao" id="formInscricao" action="<?php echo base_url('index.php').'/inscricao/gravarPreInscricao/'.$this->uri->segment(3)?>" method="POST">
                     <fieldset>
                          <div class="control-group">
                               <label class="control-label"><strong>Curso:</strong></label>
@@ -11,7 +17,7 @@
                                         <option value="">[-- Selecionar --]</option>
                                         <?php                               
                                         foreach ($cursos as $curso) { ?>
-                                             <option value="<?php echo $curso->Codg_Curso; ?>" <?php echo (isset($_REQUEST['codigo']) and $_REQUEST['codigo'] == $curso->Codg_Curso ? 'selected="selected"' : '')?>><?php echo $curso->Nome; ?></option>
+                                             <option value="<?php echo $curso->Codg_Curso; ?>" <?php echo ($this->uri->segment(3) == $curso->Codg_Curso ? 'selected="true"' : ""); ?>><?php echo $curso->Nome; ?></option>
                                         <?php } ?>
                                    </select>
                               </div>

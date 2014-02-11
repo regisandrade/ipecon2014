@@ -1,6 +1,7 @@
 <div id="pagina-interna">
      <div class="internaCtrl">
           <div class="titulo"><?php echo $curso->Nome?></div>
+          <div class="divInscricao"><a href="<?php echo base_url('index.php').'/inscricao/preInscricao/'.$this->uri->segment(3)?>" class="btn btn-warning"><i class="icon-align-justify"></i>&nbsp;Realizar pré-inscrição</a></div>
           <div class="detalheCurso">
           	<label>Apresentação</label>
           	<span><?php echo $curso->apresentacao ?></span>

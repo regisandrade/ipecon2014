@@ -18,6 +18,9 @@ define("LONGITUDE", $config->longitude_endereco);
 <head>
 	<meta charset="UTF-8" />
 	<title><?php echo EMPRESA ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+
 	<meta name="author" content="Régis Andrade - regisandrade@gmail.com" />
   <meta name="description" content="<?php  echo isset($metadescricao)?$metadescricao:$config->descricao?>">
   <meta name="robots" content="index, follow" />
@@ -33,11 +36,11 @@ define("LONGITUDE", $config->longitude_endereco);
 
   <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
 
-  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6qo-nK1_R_tTUXTFeyHfyyIVYJg2IoVw&amp;sensor=false"></script>
-
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
   <script src="<?php echo base_url()?>public/script/regras.validate.js"></script>
+
+  <script src="<?php echo base_url()?>public/script/generica.js" ></script>
 
 
 </head>
@@ -62,5 +65,10 @@ define("LONGITUDE", $config->longitude_endereco);
   // Rodape
   $this->load->view('inicio/rodape_view');
 ?>
+
+ <!-- Le javascript
+  ================================================== -->
+  <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-alert.js"></script>
+
 </body>
 </html>

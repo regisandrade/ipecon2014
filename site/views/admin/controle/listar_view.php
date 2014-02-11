@@ -95,7 +95,7 @@
     <?php
 	if($f['type']=='img'){
 
-		if(strpos($d[$field],'.png')||strpos($d[$field],'.jpg')||strpos($d[$field],'.gif')){
+		if(strpos($d[$field],'.png')||strpos($d[$field],'.jpg')||strpos($d[$field],'.JPG')||strpos($d[$field],'.jpeg')||strpos($d[$field],'.gif')){
 			if(@image_url($d[$field],'100x60')){
 				echo '<img src=\''.(image_url($d[$field],'100x60')).'\' />';
 				}

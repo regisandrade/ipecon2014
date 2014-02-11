@@ -159,6 +159,24 @@
   text-decoration: underline;
   color: #FAA732;
 }
+
+.fotos ul {
+  border: medium none;
+  border-radius: 0;
+  margin: 30px 1px;
+  width: 95%;
+}
+.fotos ul li {
+  list-style-type: none;
+  border-radius: 9px;
+  float: left;
+  height: 30px;
+  width: 50%;
+}
+.fotos ul li a:hover{
+  text-decoration: underline;
+  color: #FAA732;
+}
 /****** /Lista personalisada ******/
 
 /* Coleções */
@@ -277,3 +295,20 @@ textarea{
   display: inline-block;
 }
 
+.divInscricao{
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.alert-error{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 25px; 
+}
+
+li > a > img{
+  width: 32px;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
