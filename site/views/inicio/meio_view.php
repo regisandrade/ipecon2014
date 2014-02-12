@@ -21,7 +21,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
       <div id="conteudo-login">
         <h4>PORTAL DO ALUNO</h4>
         <!-- Formulario login -->
-        <form id="form1" name="form1" method="post" action="" class="form-horizontal">
+        <form id="form1" name="form1" method="post" action="<?php echo base_url('index.php')?>/alunos/entrar" class="form-horizontal">
           <div class="control-group">
             <div class="controls">
               <div class="input-prepend">
@@ -39,6 +39,14 @@ $noticias = $this->db->order_by("id_noticia","desc")
               <button type="submit" class="btn btn-large btn-block btn-warning">Efetuar Login</button>
               <a href="javascript:void(0)" onclick="">Esqueceu sua senha?</a>
             </div>
+            <div class="controls">
+            <?php
+            if (isset($msgErro)) {
+                 echo "<div class=\"alert alert-block alert-error fade in erroLogin \">
+                 <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button>".$msgErro."</div>";
+            }
+            ?>
+            </div>
           </div>
         </form>
         <!-- /Formulario login -->
@@ -48,7 +56,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
         <ul>
           <?php
           foreach ($noticias as $noticia) {
-            echo '<li><a href="#">'.substr($noticia->titulo,0,91).'</a></li>';
+            echo '<li><a href="'.base_url('index.php').'/noticias/verNoticia/'.$noticia->id_noticia.'">'.substr($noticia->titulo,0,91).'</a></li>';
           }
           ?>
         </ul>

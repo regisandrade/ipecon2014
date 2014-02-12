@@ -307,6 +307,13 @@ textarea{
   margin-top: 25px; 
 }
 
+.erroLogin{
+  width: 239px;
+  font-size: 13px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
 li > a > img{
   width: 32px;
   vertical-align: middle;

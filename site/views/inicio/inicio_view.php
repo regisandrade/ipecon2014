@@ -1,6 +1,9 @@
 <?php
+$this->load->library('session');
+
 $config = $this->db->get('configuracao')->result();
 $config = isset($config[0])?$config[0]:0;
+
 define("EMPRESA", $config->empresa);
 define("EMAIL", $config->email);
 define("FACEBOOK", $config->facebook);
@@ -11,7 +14,6 @@ define("TELEFONE_1", $config->telefone_1);
 define("TELEFONE_2", $config->telefone_2);
 define("LATITUDE", $config->latitude_endereco);
 define("LONGITUDE", $config->longitude_endereco);
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

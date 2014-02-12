@@ -9,13 +9,13 @@ class Noticias extends CI_Controller {
 		$this->load->view('inicio/inicio_view',$data);
 	}
 
-	public function descricao_noticia()
+	public function verNoticia()
 	{
-		$data['pagina'] = 'noticia/ver_noticia';
+		$data['pagina'] = 'noticias/ver_noticia';
 
 		$data['noticia'] = $this->db
 		                        ->where('id_noticia',$this->uri->segment(3))
-		                        ->get('noticia')->row();
+		                        ->get('noticias')->row();
 
 		$this->load->view('inicio/inicio_view',$data);
 	}

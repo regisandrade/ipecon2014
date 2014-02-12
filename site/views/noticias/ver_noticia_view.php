@@ -1,6 +1,6 @@
 <div id="pagina-interna">
 	<div class="internaCtrl">
-        <div class="titulo" style="margin:0 0 60px 0;">
+        <div class="titulo">
              <?php echo  $noticia->titulo; ?>
         </div>
         
