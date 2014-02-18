@@ -1,14 +1,26 @@
-<?php
-if (!isset($this->uri->segments[3])) {
-     echo "<div class=\"alert alert-block alert-error fade in\">
-     <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button><strong>Atenção</strong>, selecionar um curso antes de realizar a pré-inscrição.</div>";
-}
-?>
 <div id="pagina-interna">
      <div class="internaCtrl">
           <div class="titulo">Pré-Inscrição</div>
           <div class="texto">
-               <form class="form-horizontal" name="formInscricao" id="formInscricao" action="<?php echo base_url('index.php').'/inscricao/gravarPreInscricao/'.$this->uri->segment(3)?>" method="POST">
+               <?php
+               if (!isset($this->uri->segments[3])) {
+                    echo "<div class=\"alert alert-error fade in erroPreInscricao\">
+                    <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button><strong>Atenção</strong><br>Selecionar um curso antes de realizar a pré-inscrição.</div>";
+               }
+               if (isset($this->uri->segments[4])) {
+                    switch ($this->uri->segments[4]) {
+                         case '1':
+                              $frase = 'Você já esta cadastrado neste curso.';
+                              break;
+                         case '2':
+                              $frase = 'Você já tem Endereço cadastrado.';
+                              break;
+                    }
+                    echo "<div class=\"alert alert-error fade in erroPreInscricao \">
+                    <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button><strong>Atenção</strong><br>".$frase."</div>";
+               }
+               ?>
+               <form class="form-horizontal" name="formInscricao" id="formInscricao" action="<?php echo base_url('index.php').'/inscricao/gravarPreInscricao'?>" method="POST">
                     <fieldset>
                          <div class="control-group">
                               <label class="control-label"><strong>Curso:</strong></label>
@@ -199,12 +211,12 @@ if (!isset($this->uri->segments[3])) {
 
                          <div class="control-group">
                               <label class="control-label"><strong>Celular:</strong></label>
-                              <div class="controls"><input name="fone_comercial" type="text" id="fone_comercial" class="input-medium"></div>
+                              <div class="controls"><input name="celular" type="text" id="celular" class="input-medium"></div>
                          </div>
 
                          <div class="control-group">
                               <label class="control-label"><strong>Comercial:</strong></label>
-                              <div class="controls"><input name="celular" type="text" id="celular" class="input-medium"></div>
+                              <div class="controls"><input name="fone_comercial" type="text" id="fone_comercial" class="input-medium"></div>
                          </div>
 
                          <div class="control-group">

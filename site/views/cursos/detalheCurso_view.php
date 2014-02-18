@@ -23,11 +23,16 @@
           	<span><?php echo $curso->duracao ?></span>
           	<label>Número de Vagas</label>
           	<span><?php echo $curso->numeroVagas; ?></span>
-
           	<label>Coordenação Geral</label>
           	<span><?php echo $curso->coordenacaogeral; ?></span>
-          	<label>Coordenação Acadêmica</label>
-          	<span><?php echo $curso->coordenacaoacademica; ?></span>
+          	<?php
+               if (!empty($curso->coordenacaoacademica)) {
+               ?>
+                    <label>Coordenação Acadêmica</label>
+                    <span><?php echo $curso->coordenacaoacademica; ?></span>
+               <?php
+               }
+               ?>               
           	<label>Horário das Aulas</label>
           	<span><?php echo $curso->horario; ?></span>
           	<label>Processo Seletivo</label>

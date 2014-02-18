@@ -3,16 +3,52 @@ $noticias = $this->db->order_by("id_noticia","desc")
                  ->limit(4)
                  ->get('noticias')
                  ->result();
+$cursos = $this->db
+               ->where('Status','1')
+               ->order_by('Ordem','ASC')
+               ->get('curso')
+               ->result();
 ?>
 <!-- conteudo -->
 <div id="conteudo">
 
   <!-- banners -->
-  <div id="banner">Banner</div>
+  <div id="banner"><h1>Bannerss</h1></div>
   <!-- /banners -->
 
   <!-- cursos -->
-  <div id="cursos">&nbsp;</div>
+  <div id="cursos">
+    <ul>
+    <?php
+    $volta = 0;
+    $estilo = null;
+    foreach ($cursos as $curso) {
+      switch ($volta) {
+        case '0':
+          $estilo = "left: 200px; top: 32px;";
+          break;
+        case '1':
+          $estilo = "left: 210px; top: 32px;";
+          break;
+        case '2':
+          $estilo = "left: 175px; top: 32px; width: 23.5%;";
+          break;
+        case '3':
+          $estilo = "left: 200px; top: 85px;";
+          break;
+        case '4':
+          $estilo = "left: 210px; top: 85px;";
+          break;
+        case '5':
+          $estilo = "left: 175px; top: 85px; width: 23.5%;";
+          break;
+      }
+      echo "<li style=\"".$estilo."\"><a href=\"".base_url('index.php')."/cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' e ', ' e <br>', $curso->Nome)."</a></li>";
+      $volta++;
+    }
+    ?>
+    </ul>
+  </div>
   <!-- cursos -->
 
   <!-- login-noticias-facebook -->
@@ -42,7 +78,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
             <div class="controls">
             <?php
             if (isset($msgErro)) {
-                 echo "<div class=\"alert alert-block alert-error fade in erroLogin \">
+                 echo "<div class=\"alert alert-error fade in erroLogin \">
                  <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button>".$msgErro."</div>";
             }
             ?>

@@ -42,7 +42,7 @@ $(document).ready( function() {
 				required: true
 			},
 			cep: {
-				required: true,	minlength: 10, digits: true
+				required: true,	minlength: 9
 			},
 			celular: {
 				required: true

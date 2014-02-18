@@ -120,7 +120,6 @@
   width: 50%;
 }
 .cursos ul li a:hover{
-  text-decoration: underline;
   color: #FAA732;
 }
 
@@ -312,6 +311,12 @@ textarea{
   font-size: 13px;
   margin-left: 0px;
   margin-top: 10px;
+}
+
+.erroPreInscricao{
+  width: 900px;
+  font-size: 13px;
+  margin-left: 0px;
 }
 
 li > a > img{

@@ -55,7 +55,7 @@ function get_servidor(){
 	return isset($_SESSION['servidor'])?$_SESSION['servidor']:false;
 	}
 
-function data_usa($data){
+function dataUSA($data){
 	list($d,$m,$y) = @explode('/',$data);
 	return "$y-$m-$d";
 	}
@@ -178,4 +178,13 @@ function tipo_usuario($str){
 		}
 	}					
 	
-	
+function gerarSenha(){
+	$caracteresAceitos = 'abcdefghijklmnopqrstuvxywz0123456789';
+	$max = strlen($caracteresAceitos)-1;
+	$password = null;
+
+	for($i=0; $i < 6; $i++) {
+		$password .= $caracteresAceitos{mt_rand(0, $max)};
+	}
+	return $password;
+}

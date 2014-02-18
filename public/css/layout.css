@@ -24,13 +24,6 @@ img{
 	height: 136px;
 }*/
 
-#banner{
-	width: 100%;
-	height: 410px;
-	position:absolute;
-	top:131px;
-}
-
 #banner_imagem_fundo{
 	position:absolute;
 	top: 0;
@@ -256,6 +249,7 @@ a{
   background: url("../imagem/layout/bg-topo.png") no-repeat;
   width: 100%;
   height: 68px;
+  z-index:2;
 }
 #header2-conteudo{
   width: 1024px;
@@ -302,9 +296,10 @@ a{
 
 /********** Banner **********/
 #banner{
+  background: url("../imagem/layout/bg-banners.png") no-repeat;
   width: 100%;
-  height: 225px;
-  background-color: #0000ff;
+  height: 495px;
+  position: relative;
 }
 /********** /Banner **********/
 
@@ -313,6 +308,26 @@ a{
   background: url("../imagem/layout/bg-cursos.png") no-repeat;
   width: 100%;
   height: 225px;
+  position: relative;
+}
+#cursos ul{
+  width: 100%;
+  margin: 30px 1px;
+}
+#cursos ul li{
+  list-style-type: none;
+  float: left;
+  height: 53px;
+  width: 30%;
+  position: relative;
+  font-style: italic;
+}
+#cursos ul li a{
+  font-size: 16px;
+  color: #000;
+}
+#cursos ul li a:hover{
+  color: #FAA732;
 }
 /********** /Cursos **********/
 
@@ -321,6 +336,7 @@ a{
   background: url("../imagem/layout/bg-noticia-login-facebook.png") no-repeat;
   width: 100%;
   height: 388px;
+  position: relative;
 }
 #conteudo-login-noticias-facebook{
   width: 1024px;
