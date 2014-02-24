@@ -15,10 +15,19 @@ class Inscricao extends CI_Controller {
 
 	public function gravarPreInscricao()
 	{
+		$this->load->helper('my_email');
+
 		/*echo "<pre>";
 		print_r($this->input->post());
 		echo "</pre>";*/
 		//die();
+		$config = $this->db->get('configuracao')->row();
+
+		$curso = $this->db
+					  ->where('Codg_Curso',$this->input->post('codg_curso'))
+					  ->where('Status',1)
+					  ->get('curso')->row();
+		
 		$data['pagina'] = 'inscricao/inscricao';		
 
 		# Limpar formatação de campos
@@ -83,8 +92,8 @@ class Inscricao extends CI_Controller {
 			$dadosEndereco = array(
 				'Endereco' => $this->input->post('endereco'),
 				'Bairro' => $this->input->post('bairro'),
-				'CEP' => $this->input->post('naturalidade'),
-				'Cidade' => $this->input->post('cep'),
+				'CEP' => $this->input->post('cep'),
+				'Cidade' => $this->input->post('cidade'),
 				'UF' => $this->input->post('uf_2'),
 				'Fone_Residencial' => $this->input->post('fone_residencial'),
 				'Fone_Comercial' => $this->input->post('fone_comercial'),
@@ -99,8 +108,8 @@ class Inscricao extends CI_Controller {
 				'Id_Numero' => $idNumero,
 				'Endereco' => $this->input->post('endereco'),
 				'Bairro' => $this->input->post('bairro'),
-				'CEP' => $this->input->post('naturalidade'),
-				'Cidade' => $this->input->post('cep'),
+				'CEP' => $this->input->post('cep'),
+				'Cidade' => $this->input->post('cidade'),
 				'UF' => $this->input->post('uf_2'),
 				'Fone_Residencial' => $this->input->post('fone_residencial'),
 				'Fone_Comercial' => $this->input->post('fone_comercial'),
@@ -181,54 +190,21 @@ class Inscricao extends CI_Controller {
 			$this->db->insert($tabela,$arrBoleto);
 		}
 
-		$de = "ipecon@ipecon.com.br";
+		$de = $config->email;
+
 		# 7. Enviar um e-mail com o link do boleto para o aluno imprimir
 		$texto = '<!DOCTYPE html>
 				<html>
 				<head>
 				<meta charset="UTF-8">
 				<title>IPECON</title>
-				<style type="text/css">
-					*{
-						font-family: verdana, arial;
-						font-size: 13px;
-					}
-					#corpo{
-						width: 100%;
-					}
-					#topo{
-						width: 100%;
-						height: 110px;
-						background-color: #DDD;
-						border: 1px solid #CCC;
-						position: relative;
-					}
-					#topo > img {
-						width: 250px;
-						margin: 5px;
-					}
-					#conteudo{
-						width: 99.6%;
-						position: relative;
-						border: 1px solid #CCC;
-						padding-left: 5px;
-					}
-					#rodape{
-						width: 100%;
-						height: 60px;
-						text-align: center;
-						font-size: 11px;
-						position: relative;
-						background-color: #DDD;
-						border: 1px solid #CCC;
-					}
-				</style>
 				</head>
 
-				<body>
-					<div id="corpo">
-						<div id="topo"><img src="http://www.ipecon.com.br/imagens/marca.png" border="0" /></div>
-						<div id="conteudo">
+				<body style="font-family: verdana, arial; font-size: 13px;">
+					<div style="width: 98%;">
+						<div style="width: 100%; height: 105px; background-color: #DDD; border: 1px solid #CCC; position: relative;">
+							<img style="width: 250px; margin: 5px;" src="http://www.ipecon.com.br/imagens/marca.png" border="0" /></div>
+						<div style="width: 99.3%; position: relative; border: 1px solid #CCC; padding-left: 5px;">
 							<p>Prezado(a) <strong>'.$this->input->post('nome').'.</strong></p>
 							<p>Agradecemos pela escolha de nossa instituição.<br />
 							<br/><p>Garanta sua vaga efetuando o pagamento do boleto no valor de R$ 100,00 e enviando os seguintes documentos:</p>
@@ -239,24 +215,135 @@ class Inscricao extends CI_Controller {
 								<li>Fotocópia do CPF; </li>
 								<li>Foto 3 x 4. </li>
 							</ul>
-							<p style="text-align: center;"><a href="http://www.ipecon.com.br/boletophp/boleto_itau.php?idNumero='.$idNumero.'&curso='.$this->input->post('codg_curso').'"><img src="http://www.ipecon.com.br/imagens/imgBoletoBancario.jpg" border="0" /><br/>imprimir Boleto</a>
+							<p style="text-align: center;"><a href="http://www.ipecon.com.br/boletophp/boleto_itau.php?idNumero='.$idNumero.'&curso='.$this->input->post('codg_curso').'"><img style="width: 150px;" src="http://www.ipecon.com.br/imagens/imgBoletoBancario.jpg" border="0" /><br/>imprimir Boleto</a>
 							<p>&nbsp;</p>
 							<p>Atenciosamente,
 							<br /><br />
 							IPECON - Ensino e Consultoria<br>
 						</div>
-						<div id="rodape">Av. T-4, nº 1.478, Ed. Absolut Business Style, sala A-132 (13º andar)<br>
+						<div style="width: 100%; height: 90px; text-align: center; font-size: 11px; position: relative; background-color: #DDD; border: 1px solid #CCC;">Av. T-4, nº 1.478, Ed. Absolut Business Style, sala A-132 (13º andar)<br>
 										Setor Bueno, Goiânia/GO - CEP: 74.230-030<br>
-										(62) 3214-2563 - (62) 3214-2563<br>
+										(62) 3214-2563 - (62) 3214-2563<br><br>
+										<a href="'.$config->facebook.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/facebook.png" border="0" /></a>&nbsp;
+										<a href="'.$config->twitter.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/twitter.png" border="0" /></a>&nbsp;
+										<a href="'.$config->linkedin.'"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-24.png" border="0" /></a>
 						</div>
 					</div>
 				</body>
 				</html>';
 		$assunto = "[Não responda] Pré-inscrição realizada - IPECON - Pós-Graduação";
-		email($de,$this->input->post('email'),$assunto,$texto);
-		# 8. Enviar um e-mail com o comprovante/dados de inscrição
+		if(!email($de,$this->input->post('email'),$assunto,$texto)){
+			$erroInscricao = 3;
+			redirect(base_url('index.php').'/inscricao/preInscricao/'.$this->input->post('codg_curso').'/'.$erroInscricao);
+			exit();
+		}
+
+		# 8. Enviar um e-mail com o comprovante/dados da pre-inscrição
+		$texto = '<!DOCTYPE html>
+				<html>
+				<head>
+				<meta charset="UTF-8">
+				<title>IPECON</title>
+				</head>
+
+				<body style="font-family: verdana, arial; font-size: 13px;">
+					<div style="width: 98%;">
+						<div style="width: 100%; height: 105px; background-color: #DDD; border: 1px solid #CCC; position: relative;">
+							<img style="width: 250px; margin: 5px;" src="http://www.ipecon.com.br/imagens/marca.png" border="0" /></div>
+						<div style="width: 99.3%; position: relative; border: 1px solid #CCC; padding-left: 5px;">
+							<!-- Conteudo -->
+							<h2 style="text-align: center;">Comprovante de Pré-Inscrição</h2>
+							<label style="display: block; margin-bottom: 10px;"><strong>Curso</strong><br>'.$curso->Nome.'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Nome</strong><br>'.$this->input->post('nome').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Data de nascimento</strong><br>'.$this->input->post('data_nascimento').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Naturalidade</strong><br>'.$this->input->post('naturalidade').' / '.$this->input->post('uf_1').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Nacionalidade</strong><br>'.$this->input->post('nacionalidade').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Sexo</strong><br>'.$this->input->post('sexo').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Identidade (RG)</strong><br>'.$this->input->post('rg').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Orgão Exp.:</strong><br>'.$this->input->post('orgao').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>C.P.F.</strong><br>'.$this->input->post('cpf').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Endereço</strong><br>'.$this->input->post('endereco').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Bairro</strong><br>'.$this->input->post('bairro').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Cidade/Estado</strong><br>'.$this->input->post('cidade').'/'.$this->input->post('uf_2').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>CEP</strong><br>'.$this->input->post('cep').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Telefone Residência</strong><br>'.($this->input->post('fone_residencial') ? $this->input->post('fone_residencial') : "Não informado").'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Telefone Celular</strong><br>'.($this->input->post('celular') ? $this->input->post('celular') : "Não informado").'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Telefone Comercial</strong><br>'.($this->input->post('fone_comercial') ? $this->input->post('fone_comercial') : "Não informado").'</label>	
+							<label style="display: block; margin-bottom: 10px;"><strong>e-Mail</strong><br>'.$this->input->post('email').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Curso de Graduação</strong><br>'.$this->input->post('curso').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Instituição</strong><br>'.$this->input->post('instituicao').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Sigla da Instituição</strong><br>'.$this->input->post('sigla').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Conclusão</strong><br>'.$this->input->post('conclusao').'</label>
+							
+							<p style="text-align: center;"><a href="http://www.ipecon.com.br/boletophp/boleto_itau.php?idNumero='.$idNumero.'&curso='.$this->input->post('codg_curso').'"><img style="width: 150px;" src="http://www.ipecon.com.br/imagens/imgBoletoBancario.jpg" border="0" /><br/>imprimir Boleto</a>
+							<p>&nbsp;</p>
+							<p>Atenciosamente,
+							<br /><br />
+							IPECON - Ensino e Consultoria<br>
+						</div>
+						<div style="width: 100%; height: 90px; text-align: center; font-size: 11px; position: relative; background-color: #DDD; border: 1px solid #CCC;">Av. T-4, nº 1.478, Ed. Absolut Business Style, sala A-132 (13º andar)<br>
+										Setor Bueno, Goiânia/GO - CEP: 74.230-030<br>
+										(62) 3214-2563 - (62) 3214-2563<br><br>
+										<a href="'.$config->facebook.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/facebook.png" border="0" /></a>&nbsp;
+										<a href="'.$config->twitter.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/twitter.png" border="0" /></a>&nbsp;
+										<a href="'.$config->linkedin.'"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-24.png" border="0" /></a>
+						</div>
+					</div>
+				</body>
+				</html>';
+		$assunto = "[Não responda] Comprovante de pré-inscrição - IPECON - Pós-Graduação";
+		if(!email($de,$this->input->post('email'),$assunto,$texto)){
+			$erroInscricao = 4;
+			redirect(base_url('index.php').'/inscricao/preInscricao/'.$this->input->post('codg_curso').'/'.$erroInscricao);
+			exit();
+		}
+
 		# 9. Enviar um e-mail para IPECON informando que mais uma inscrição foi realizada
+		$texto = '<!DOCTYPE html>
+				<html>
+				<head>
+				<meta charset="UTF-8">
+				<title>IPECON</title>
+				</head>
+
+				<body style="font-family: verdana, arial; font-size: 13px;">
+					<div style="width: 98%;">
+						<div style="width: 100%; height: 105px; background-color: #DDD; border: 1px solid #CCC; position: relative;">
+							<img style="width: 250px; margin: 5px;" src="http://www.ipecon.com.br/imagens/marca.png" border="0" /></div>
+						<div style="width: 99.3%; position: relative; border: 1px solid #CCC; padding-left: 5px;">
+							<!-- Conteudo -->
+							<h2 style="text-align: center;">Nova Pré-Inscrição</h2><br>
+							<label style="display: block; margin-bottom: 10px;"><strong>Aluno(a):</strong><br>'.$this->input->post('nome').'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Curso:</strong><br>'.$curso->Nome.'</label>
+							<label style="display: block; margin-bottom: 10px;"><strong>Data de cadastro:</strong><br>'.dataHora().'</label>
+							
+						</div>
+						<div style="width: 100%; height: 90px; text-align: center; font-size: 11px; position: relative; background-color: #DDD; border: 1px solid #CCC;">Av. T-4, nº 1.478, Ed. Absolut Business Style, sala A-132 (13º andar)<br>
+										Setor Bueno, Goiânia/GO - CEP: 74.230-030<br>
+										(62) 3214-2563 - (62) 3214-2563<br><br>
+										<a href="'.$config->facebook.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/facebook.png" border="0" /></a>&nbsp;
+										<a href="'.$config->twitter.'"><img src="https://cdn1.iconfinder.com/data/icons/New-Social-Media-Icon-Set-V11/24/twitter.png" border="0" /></a>&nbsp;
+										<a href="'.$config->linkedin.'"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-24.png" border="0" /></a>
+						</div>
+					</div>
+				</body>
+				</html>';
+		$assunto = "[Não responda] Nova pré-inscrição realizada";
+		if(!email($de,$this->input->post('email'),$assunto,$texto)){
+			$erroInscricao = 5;
+			redirect(base_url('index.php').'/inscricao/preInscricao/'.$this->input->post('codg_curso').'/'.$erroInscricao);
+			exit();
+		}
+
 		# 10. Direcionar o aluno para uma página para impressão do boleto.
+		redirect(base_url('index.php').'/inscricao/mensagemPreInscricao/'.$idNumero.'/'.$this->input->post('codg_curso'));
+
+	}
+
+	function mensagemPreInscricao(){
+		$data['pagina'] = 'inscricao/mensagem_inscricao';
+
+		$this->load->view('inicio/inicio_view',$data);
 	}
 
 }

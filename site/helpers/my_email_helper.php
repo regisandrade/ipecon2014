@@ -19,7 +19,7 @@ function email($de,$para,$assunto,$texto){
 	$headers = "MIME-Version: 1.1\r\n";
 	$headers .= "Content-type: text/html; charset=utf-8\r\n";
 	$headers .= "From: $de\r\n"; // remetente
-	$envio = @mail($para, $assunto, $corpo, $headers);
+	$envio = @mail($para, $assunto, $texto, $headers);
 	 
 	if($envio)
 		return true;

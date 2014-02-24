@@ -15,6 +15,15 @@
                          case '2':
                               $frase = 'Você já tem Endereço cadastrado.';
                               break;
+                         case '3':
+                              $frase = 'Erro no envio de e-mail do boleto.';
+                              break;
+                         case '4':
+                              $frase = 'Erro no envio de e-mail dos dados da pré-inscrição.';
+                              break;
+                         case '4':
+                              $frase = 'Erro no envio de e-mail de aviso ao IPECON.';
+                              break;
                     }
                     echo "<div class=\"alert alert-error fade in erroPreInscricao \">
                     <button class=\"close\" data-dismiss=\"alert\" type=\"button\">×</button><strong>Atenção</strong><br>".$frase."</div>";

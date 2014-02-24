@@ -1,0 +1,33 @@
+#webpageDialog .modal.fade.in {
+    top: 30%;
+    }
+#webpageDialog .modal {
+    width: 700px;
+    left: 40%;
+    }
+#webpageDialog .modal-header {
+    width: 696px !important;
+    }
+#webpageDialog .modal-body {
+    width: 726px;
+    padding: 0;
+    max-height: none;
+    height: 460px;
+    }
+#webpageDialog .modal-footer {
+    width: 696px;
+    }
+#webpageDialog .btn {
+    width: 80px;
+    margin-left: 5px;
+    }
+#webpageDialog iframe {
+    width: 713px;
+    height: 700px;
+    frameborder: 0;
+    }
+
+iframe{
+    width: 100%;
+    height: 550px;
+}

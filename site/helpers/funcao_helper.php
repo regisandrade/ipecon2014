@@ -58,20 +58,25 @@ function get_servidor(){
 function dataUSA($data){
 	list($d,$m,$y) = @explode('/',$data);
 	return "$y-$m-$d";
-	}
+}
 
 function is_date($data){
-	 $date = @explode('-',$data);
-	 if(count($date)==3){
-		  
-		  $res = checkdate($date[1],$date[2],$date[0]);
-		  
-		  return $res==1;
-		  
-		 }else{
-			 return false;
-			 }
+	$date = @explode('-',$data);
+	if(count($date)==3){
+		$res = checkdate($date[1],$date[2],$date[0]);
+		return $res==1;
+	}else{
+		return false;
 	}
+}
+
+function dataHora ()
+{
+	setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
+	date_default_timezone_set('America/Sao_Paulo');
+	# strftime("%A, %d de %B de %Y", strtotime( date('Y-m-d') )); // Dia da semana, data de mês de ano
+	return strftime("%d de %B de %Y", strtotime( date('Y-m-d') ));
+}
 
 function set_menu($menu='',$sub=''){
 	 $objMenu = new stdClass;

@@ -32,6 +32,8 @@ define("LONGITUDE", $config->longitude_endereco);
 
   <link href="<?php echo base_url()?>public/css/layout.css" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url()?>public/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo base_url()?>public/css/dialog.css" rel="stylesheet" type="text/css" />
+
   <link href="<?php echo base_url()?>public/imagem/layout/faf.png" rel="icon" />
 
   <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />
@@ -71,6 +73,8 @@ define("LONGITUDE", $config->longitude_endereco);
  <!-- Le javascript
   ================================================== -->
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-alert.js"></script>
+  <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-modal.js"></script>
+  <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-transition.js"></script>
 
 </body>
 </html>
