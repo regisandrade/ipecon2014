@@ -4,7 +4,7 @@
 
 <!-- BEGIN BANNER -->
 <!-- Banner de imagem -->
-<div id="banner_imagem_fundo">
+<div id="banner_imagem_fundo">aaaa
  <ul>
  <?php   foreach($banner as $b){?>
     <li style="width:100%;margin:0px auto !important;">

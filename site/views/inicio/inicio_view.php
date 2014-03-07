@@ -21,7 +21,7 @@ define("LONGITUDE", $config->longitude_endereco);
 	<meta charset="UTF-8" />
 	<title><?php echo EMPRESA ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+  
 
 	<meta name="author" content="Régis Andrade - regisandrade@gmail.com" />
   <meta name="description" content="<?php  echo isset($metadescricao)?$metadescricao:$config->descricao?>">
@@ -39,13 +39,13 @@ define("LONGITUDE", $config->longitude_endereco);
   <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />
 
   <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
+  <!--<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
 
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
   <script src="<?php echo base_url()?>public/script/regras.validate.js"></script>
 
   <script src="<?php echo base_url()?>public/script/generica.js" ></script>
-
 
 </head>
 <body>
@@ -57,19 +57,20 @@ define("LONGITUDE", $config->longitude_endereco);
     js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-<?php
-  // Topo
-  $this->load->view('inicio/topo_view');
-  // Meio
-  if(isset($pagina)){
-    $this->load->view("{$pagina}_view");
-  }else{
-    $this->load->view("inicio/meio_view");
-  }
-  // Rodape
-  $this->load->view('inicio/rodape_view');
-?>
-
+    <div class="container">
+    <?php
+      // Topo
+      $this->load->view('inicio/topo_view');
+      // Meio
+      if(isset($pagina)){
+        $this->load->view("{$pagina}_view");
+      }else{
+        $this->load->view("inicio/meio_view");
+      }
+      // Rodape
+      $this->load->view('inicio/rodape_view');
+    ?>
+    </div>
  <!-- Le javascript
   ================================================== -->
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-alert.js"></script>
