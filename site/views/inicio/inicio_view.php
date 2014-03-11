@@ -76,6 +76,8 @@ define("LONGITUDE", $config->longitude_endereco);
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-alert.js"></script>
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-modal.js"></script>
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-transition.js"></script>
+  <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-scrollspy.js"></script>
+  <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-carousel.js"></script>
 
 </body>
 </html>

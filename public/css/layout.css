@@ -234,6 +234,11 @@ a{
 }
 
 /********** Topo **********/
+#header{
+  position: absolute;
+  width: 1280px;
+  z-index: 2;
+}
 #header-1{
   height: 24px;
 }
@@ -301,6 +306,8 @@ a{
   width: 100%;
   height: 483px;
   position: relative;
+  clear: both;
+  top: 87px;
 }
 #bg-banner-esquerda{
   background: url("../imagem/layout/bg-banners-esquerda.png") no-repeat;
@@ -328,6 +335,7 @@ a{
   width: 100%;
   height: 225px;
   position: relative;
+  top: 57px;
 }
 #cursos ul{
   width: 100%;
@@ -356,6 +364,7 @@ a{
   width: 100%;
   height: 388px;
   position: relative;
+  top: 55px;
 }
 #conteudo-login-noticias-facebook{
   width: 1024px;
@@ -436,6 +445,7 @@ a{
   position: relative;
   width: 100%;
   background: url("../imagem/layout/bg-rodape.png") no-repeat;
+  top: 55px;
 }
 #conteudoRodape{
   width: 1024px;

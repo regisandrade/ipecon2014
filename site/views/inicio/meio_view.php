@@ -14,9 +14,9 @@ $cursos = $this->db
 
   <!-- banners -->
   <div id="banner">
-    <div id="bg-banner-esquerda">ESQ</div>
-    <div id="bg-banner-meio">Bannerss</div>
-    <div id="bg-banner-direita">DIR</div>
+    <div id="bg-banner-esquerda"></div>
+    <div id="bg-banner-meio"><?php $this->load->view("inicio/home_banner_view"); ?></div>
+    <div id="bg-banner-direita"></div>
   </div>
   <!-- /banners -->
 
