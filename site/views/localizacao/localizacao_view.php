@@ -1,6 +1,6 @@
  <style type="text/css">
    #mapa{
-      width: 1010px;
+      width: 100%;
       height: 450px;
       border:1px solid #000;
       position: relative;
@@ -13,6 +13,8 @@
       -moz-border-radius: 5px 5px 5px 5px;
       -webkit-border-radius: 5px 5px 5px 5px;
       border-radius: 5px 5px 5px 5px;
+
+      margin-bottom: 20px;
 
    }
 </style>
@@ -63,11 +65,8 @@
 
   window.onload = loadScript;
 </script>
-<div id="pagina-interna">
-  <div class="internaCtrl">
-    <div class="titulo">Localização</div>
-    <div class="texto">
-      <div id="mapa"></div>
-    </div>
-  </div>
+
+<div class="titulo">Localização</div>
+<div class="texto">
+  <div id="mapa"></div>
 </div>

@@ -30,16 +30,16 @@ define("LONGITUDE", $config->longitude_endereco);
   <meta property="og:image" content="<?php echo base_url()?>public/imagem/layout/logotipo.jpg" />
   <meta property="og:description" content="<?php  echo isset($metadescricao)?$metadescricao:$config->descricao?>" />
 
-  <link href="<?php echo base_url()?>public/css/layout.css" rel="stylesheet" type="text/css" />
-  <link href="<?php echo base_url()?>public/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
+  <!--<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="<?php echo base_url();?>public/css/generico.css"/>
+  <!--
   <link href="<?php echo base_url()?>public/css/dialog.css" rel="stylesheet" type="text/css" />
 
   <link href="<?php echo base_url()?>public/imagem/layout/faf.png" rel="icon" />
 
-  <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />
-
-  <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
-  <!--<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+  <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />-->
 
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
@@ -57,21 +57,44 @@ define("LONGITUDE", $config->longitude_endereco);
     js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="container">
-    <?php
-      // Topo
-      $this->load->view('inicio/topo_view');
-      // Meio
-      if(isset($pagina)){
-        $this->load->view("{$pagina}_view");
-      }else{
-        $this->load->view("inicio/meio_view");
-      }
-      // Rodape
-      $this->load->view('inicio/rodape_view');
-    ?>
+  
+  <?php $conteudo = $this->uri->segment(1) ? 'conteudo140' : 'conteudo';?>
+
+  <div id="tudo">
+    <div id="<?php echo $conteudo ?>">
+      <div id="topo">
+        <?php $this->load->view('inicio/topo_view'); # Topo?>
+      </div>
+      <div id="principal">
+      <?php 
+        // Meio
+        if(isset($pagina)){
+          $this->load->view("{$pagina}_view");
+        }else{
+          $this->load->view("inicio/meio_view");
+        }
+      ?>
+      </div> <!-- Fim da div#principal -->
+
+      <div class="clear"></div>
+    </div> <!-- Fim da div#conteudo -->
+    <div id="rodape">
+      <?php $this->load->view('inicio/rodape_view'); # Rodape?>
     </div>
- <!-- Le javascript
+  </div> <!-- Fim da div#tudo -->
+
+  <!-- lightBox javascript
+  ================================================== -->
+  <script>var url = '<?php echo base_url()?>'; </script>
+  <script type="text/javascript" src="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.js"></script>
+     <script type="text/javascript">
+    $(function() {
+    $('.box-expandir').lightBox();
+    });
+    </script>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.css" media="screen" />
+
+  <!-- Le javascript
   ================================================== -->
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-alert.js"></script>
   <script src="<?php echo base_url();?>public/util/bootstrap/js/bootstrap-modal.js"></script>
