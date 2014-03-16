@@ -3,6 +3,10 @@ $(document).ready(function() {
 		setPrompt ('Nodetype for "' + decodeURI (rootName) + '"');
 		document.getElementById ("woOption" + rootType).selected = true;
 	});
+
+	$('.carousel').carousel({
+    	interval: 5000
+    })
 });
 
 function setPrompt (s) {
