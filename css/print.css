@@ -1,0 +1,32 @@
+body{
+    margin: 5px;
+    font: normal 12px Verdana, Arial, Tahoma, Sans-Serif;
+}
+p{
+	margin: 2px;
+}
+h2{
+	font: bold 12px Verdana, Arial, Tahoma, Sans-Serif;
+	color: #000;
+	padding: 0;
+	margin: 2px;
+}
+#Manchete{
+	width: 100%;
+}
+#MateriaCompleta{
+	width: 100%;
+}
+#MateriaCompleta p{
+	color: #000;
+}
+#MateriaCompleta ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#MateriaCompleta li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+	color: #000;
+}

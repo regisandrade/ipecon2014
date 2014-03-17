@@ -1,0 +1,630 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: #CCC;
+	text-align:center; /* hack para o IE */
+}
+a{
+	text-decoration: none;
+	color: #333333;
+	font: normal 11px Trebuchet MS;
+}
+a:hover{
+	text-decoration: underline;
+	color: #333333;
+	font: normal 11px Trebuchet MS;
+}
+.txtMini{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	padding: 2px;
+	width: 50px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+}
+.txtPequeno{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	padding: 2px;
+	width: 150px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+}
+.txtMedio{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	padding: 2px;
+	width: 300px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+}
+.txtGrande{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	padding: 2px;
+	width: 450px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+}
+.txtGrandeArea{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	padding: 2px;
+	width: 490px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+}
+
+/*************** FORMATAR FORMULARIO DE INSCRI«√O ************************/
+#tbLogin{
+	width: 100%;	
+}
+.textoInscricao13Negrito{
+	font: bold 13px Trebuchet MS;
+	color: #333333;
+}
+.textoInscricao12Negrito{
+	font: bold 12px Trebuchet MS;
+	color: #333333;
+}
+
+.txtInscricaoMini{
+	font: normal 12px Trebuchet MS;
+	color: #333333;
+	padding: 4px;
+	width: 80px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+	background-color: #FFFFDD;
+}
+.txtInscricaoPequeno{
+	font: normal 12px Trebuchet MS;
+	color: #333333;
+	padding: 4px;
+	width: 200px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+	background-color: #FFFFDD;
+}
+.txtInscricaoMedio{
+	font: normal 12px Trebuchet MS;
+	color: #333333;
+	padding: 4px;
+	width: 300px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+	background-color: #FFFFDD;
+}
+.txtInscricaoGrande{
+	font: normal 12px Trebuchet MS;
+	color: #333333;
+	padding: 4px;
+	width: 450px;
+	border: solid 1px #CCC;
+	margin-top: 4px;
+	background-color: #FFFFDD;
+}
+
+/***************              FIM                 ************************/
+
+/* Ttitulo dos cursos */
+.curso_1 h3{
+	color: #FE0000;
+}
+.curso_2 h3{
+	color: #FE9900;
+}
+.curso_3 h3{
+	color: #A9D913;
+}
+.curso_4 h3{
+	color: #006088;
+}
+.curso_5 h3{
+	color: #FFCC00;
+}
+.curso_6 h3{
+	color: #006600;
+}
+.curso_7 h3{
+	color: #4A6E88;
+}
+.curso_8 h3{
+	color: #990100;
+}
+/* Fim titulo dos cursos */
+
+.lblLogin{
+	width: 240px;
+	text-align: right;
+	display: block;
+}
+.texto11Negrito{
+	font: bold 11px Trebuchet MS;
+	color: #333333;
+}
+#dvConteudo {
+	width: 930px;
+	margin:0 auto;
+	padding: 0;
+	text-align:left; /* "rem√©dio" para o hack do IE */	
+	background-color: #FFF;
+}
+#dvTopo{
+	width: 930px;
+	height: 199px;
+	/*background: url(../imagens/topo.jpg) no-repeat;*/
+}
+#dvMenu{
+	width: 930px;
+	height: 40px;
+}
+#dvSubMenu{
+	width: 930px;
+	height: 44px;
+	background: url(../imagens/sub_topo.jpg) no-repeat;
+}
+#dvEsquerda{
+	width: 610px;
+	float: left;
+	padding: 0px 5px 0 5px;
+	font: normal 11px Trebuchet MS;
+	background-color: #FFF;
+}
+#dvEsquerda ul{
+	list-style-type: disc;
+	color: #333;
+	padding-left: 20px;
+}
+#dvEsquerda h2{
+	font: bold 16px Trebuchet MS;
+	color: #FE0000;
+	margin: 0px;
+}
+#dvEsquerda h3{
+	font: bold 14px Trebuchet MS;
+	color: #333333;
+	margin: 0px;
+}
+#dvEsquerda strong{
+	color: #333333;
+}
+#dvEsquerda span{
+	color: #333333;
+}
+#dvEsquerda p{
+	font: normal 11px Trebuchet MS;
+	color: #333333;
+	text-align: justify;
+}
+
+#dvPrincipal{
+	width: 620px;
+}
+#dvCursoDestaque{
+	width: 291px;
+	height: 199px;
+	float: left;
+	margin: 0px 0px 20px 10px;
+	background: url(../imagens/bg_destaques.jpg) repeat;
+	font: normal 11px Trebuchet MS;
+}
+
+.curso_1 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo1.jpg) no-repeat;
+}
+.curso_1 span {
+	background: url(../imagens/img_destaque1.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_1 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_1 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_2 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo2.jpg) no-repeat;
+}
+.curso_2 span {
+	background: url(../imagens/img_destaque2.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_2 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_2 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_3 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo1.jpg) no-repeat;
+}
+.curso_3 span {
+	background: url(../imagens/img_destaque3.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_3 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_3 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_4 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo2.jpg) no-repeat;
+}
+.curso_4 span {
+	background: url(../imagens/img_destaque4.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_4 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_4 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_5 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo1.jpg) no-repeat;
+}
+.curso_5 span {
+	background: url(../imagens/img_destaque5.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_5 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_5 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_6 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo2.jpg) no-repeat;
+}
+.curso_6 span {
+	background: url(../imagens/img_destaque6.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_6 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_6 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_7 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo1.jpg) no-repeat;
+}
+.curso_7 span {
+	background: url(../imagens/img_destaque7.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_7 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_7 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+.curso_8 h3{
+	font: bold 15px Trebuchet MS;
+	margin: 0px;
+	padding: 0 0 0 10px;
+	background: url(../imagens/bg_destaques_topo2.jpg) no-repeat;
+}
+.curso_8 span {
+	background: url(../imagens/img_destaque8.jpg) top no-repeat;
+	height: 86px;
+	display: block;
+}
+.curso_8 span span{
+	padding: 90px 5px 5px 5px;
+}
+.curso_8 .btm{
+	background: url(../imagens/rodape_destaques.jpg) bottom no-repeat;
+	height: 17px;
+	padding-top: 78px;
+	padding-right: 12px;
+	text-align: right;
+}
+
+#dvDireita{
+	width: 300px;
+	float: right;
+}
+#dvLogin{
+	width: 282px;
+	height: 166px;
+	background: url(../imagens/bg_login.jpg) repeat;
+}
+#dvLogin span {
+	background: url(../imagens/topo_login.jpg) top no-repeat;
+	height: 29px;
+	display: block;
+}
+#dvLogin span span{
+	padding: 0;
+}
+#dvLogin span span span{
+	padding-top: 35px;
+}
+#dvLogin span span span p{
+	text-align: center;
+}
+#dvLogin .btm{
+	background: url(../imagens/rodape_login.jpg) bottom no-repeat;
+	height: 13px;
+	padding-top: 124px;
+	text-align: center;
+}
+
+#dvLogoCatolica{
+	width: 282px;
+	height: 265px;
+	margin: 5px 0;
+	background: url(../imagens/logo_catolica.jpg) no-repeat;
+	text-align: center;
+	border-bottom: 1px #CCC solid;
+}
+
+#dvLogoAvila{
+	width: 282px;
+	height: 188px;
+	margin: 10px 0px 0px 0px;
+	background: url(../imagens/logoFaculdadeAvila.jpg) no-repeat;
+	text-align: center;
+}
+
+#dvNoticias{
+	width: 282px;
+	height: 220px;
+	margin: 10px 0;
+	background: url(../imagens/bg_noticias.jpg) repeat;
+}
+#dvNoticias span {
+	background: url(../imagens/topo_noticias.jpg) top no-repeat;
+	height: 39px;
+	display: block;
+}
+#dvNoticias span span{
+	padding: 15px 0 0 0;
+}
+#dvNoticias span span span{
+	padding: 23px 0 0 25px;
+	background: url(../imagens/marcador_noticias.jpg) left no-repeat;
+	font: bold 11px Trebuchet MS;
+	color: #FE9900;
+}
+#dvNoticias .btm{
+	background: url(../imagens/rodape_noticias.jpg) bottom no-repeat;
+	height: 21px;
+	padding-top: 160px;
+}
+
+#dvNoticiasG1{
+	width: 282px;
+	text-align: center;
+	margin-top: 0px;
+}
+#dvRodape{
+	width: 930px;
+	height: 107px;
+	clear: both;
+	background: url(../imagens/rodape.jpg) no-repeat;
+}
+
+#ferramentas{
+	border-top: 1px dashed #333;
+	margin-top: 15px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* Lista */
+ul{
+	list-style-type: square;
+	color: #333;
+}
+
+/* Bot„o */
+.botao, .btn {
+	font: bold 13px Trebuchet MS;
+	padding: 3px;
+	background-color: #DDD;
+	border: solid 1px #333;
+	margin-right: 5px;
+}
+
+/* Tela de esqueceu senha */
+#dvEsqueceuSenha{
+	width: 98%;
+	float: left;
+	padding: 5px 5px 0 5px;
+	font: normal 11px Trebuchet MS;
+	border-top: solid 10px #8DB3D2; 
+}
+#dvEsqueceuSenha h2{
+	font: bold 16px Trebuchet MS;
+	color: #FE0000;
+	margin: 0px;
+}
+#dvEsqueceuSenha h3{
+	font: bold 16px Trebuchet MS;
+	color: #000;
+	margin: 0px;
+}
+#dvEsqueceuSenha p{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	text-align: justify;
+}
+#dvEsqueceuSenha a{
+	font: normal 13px Trebuchet MS;
+	color: #333333;
+	text-align: justify;
+}
+#dvEsqueceuSenha label{
+      display: block;
+      padding: 2px;
+      font: normal 13px Trebuchet MS;
+      width: 100%;
+      text-align: left;
+      float: left;
+}
+#dvEsqueceuSenha label span {
+      float: left;
+      text-align: right;
+      width: 120px;
+      margin: 5px 2px 2px 2px;
+      color: #333333;
+}
+
+/* STYLUS ¡REA DO ALUNO */
+#dvConteudoAluno{
+	text-align: center;
+	font: normal 11px Trebuchet MS;
+	color: #333333;
+	margin: 5px 0;
+}
+#dvConteudoAluno h3{
+	font: bold 17px Trebuchet MS;
+}
+#dvConteudoAluno label{
+	display: block;
+}
+#dvConteudoAluno span{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/* ESTILO DA ¡REA DO ALUNO */
+#dvEsquerdaAluno{
+	width: 20%;
+	float: left;
+	height: 350px;
+}
+#dvEsquerdaAluno ul{
+	list-style-type: disc;
+	color: #333;
+	padding-left: 20px;
+}
+#dvDireitaAluno{
+	width: 79%;
+	float: right;
+	height: 390px;
+	overflow: auto;
+}
+#dvDireitaAluno ul{
+	list-style-type: disc;
+	color: #333;
+	padding-left: 20px;
+}
+#dvDireitaAluno h2{
+	font: bold 17px Trebuchet MS;
+	text-align: left;
+	color: #FE0000;
+	padding-bottom: 10px;
+	background: url(../imagens/sublinhado_titulo.jpg) left bottom no-repeat;
+}
+#dvDireitaAluno h2{
+	font: bold 17px Trebuchet MS;
+	text-align: left;
+	color: #FF0000;
+}
+#dvDireitaAluno h3{
+	font: bold 17px Trebuchet MS;
+	text-align: left;
+	color: #333;
+}
+#dvDireitaAluno p{
+	font: normal 13px Trebuchet MS;
+	color: #333;
+}
+#dvDireitaAluno li{
+	font: normal 13px Trebuchet MS;
+	color: #333;
+}
+#dvDireitaAluno li a{
+	font: normal 13px Trebuchet MS;
+	color: #333;
+}
+a.menuAluno{
+	text-decoration: none;
+	color: #333;
+	font: normal 13px Trebuchet MS;
+}
+a.menuAluno:hover{
+	text-decoration: underline;
+	color: #333;
+	font: normal 13px Trebuchet MS;
+}
+#dvDireitaAluno table{
+	width: 100%;
+}
+#dvDireitaAluno td{
+	font: normal 13px Trebuchet MS;
+	padding: 3px;
+	color: #333;
+}
+#dvDireitaAluno a{
+	font: normal 13px Trebuchet MS;
+	color: #333;
+}

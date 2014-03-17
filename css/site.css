@@ -1,0 +1,530 @@
+body{
+	background: url(../imagens/bg_geral.jpg) no-repeat;
+	margin: 0px
+	padding: 0px;
+}
+p{
+	margin: 0px;
+}
+h2{
+	font: bold 12px Verdana, Arial, Tahoma, Sans-Serif;
+	color: #054b87;
+	padding: 5px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+	color: #054b87;
+	font-weight: bold;
+}
+a:hover{
+	text-decoration: underline;
+	color: #054b87;
+	font-weight: bold;
+}
+.form{
+	border: solid 1px #054b87;
+	margin: 0 5px;
+	padding: 2px;
+	font: normal 12px Verdana, Arial, Tahoma, Sans-Serif;
+}
+.textoForm{
+    color: #000;
+}
+select{
+	border: solid 1px #054b87;
+	margin: 0 5px;
+    padding: 2px;
+	font: normal 12px Verdana, Arial, Tahoma, Sans-Serif;
+	background-color: #FFFFF9;
+}
+#geral{
+	font: normal 11px Verdana, Arial, sans-serif;
+	margin: 5px auto;
+	width: 685px;
+	color: #054b87;
+	/*border: 1px solid #CCC;*/
+}
+#print{
+    background: url(../imagens/marca.jpg) no-repeat left center;
+}
+#topoLogo{
+	background: url(../imagens/marca.jpg) no-repeat left center;
+	height: 238px;
+	width: 216px;
+	float: left;
+}
+#topoLink{
+	background: url(../imagens/top_1.jpg) no-repeat left center;
+	height: 70px;
+	width: 464px;
+	float: right;
+	margin-bottom: 4px;
+}
+#topoImagem{
+	background: url(../imagens/top_2.jpg) no-repeat left center;
+	height: 164px;
+	width: 464px;
+	float: right;
+}
+.contato{
+	float: left;
+	margin: 18px 20px;
+}
+.contato p{
+	color: #000;
+}
+.menuTopo{
+	float: right;
+	margin-top: 30px;
+}
+.menuTopo ul{
+	margin: 0px;
+}
+.menuTopo li{
+	display: inline;
+	padding-right: 15px;
+}
+#imgHome{
+	background: url(../imagens/h_1.jpg) no-repeat left center;
+	padding: 3px 15px;
+	font-weight: bold;
+}
+#imgContato{
+	background: url(../imagens/h_3.jpg) no-repeat left center;
+	padding:3px 15px;
+	font-weight: bold;
+}
+#divEsquerda{
+	float: left;
+	margin: 5px 0px;
+}
+#menu{
+	background: url(../imagens/bg_menu.jpg) no-repeat top center;
+	width: 216px;
+	height: 192px;
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#menu li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+}
+#menu p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+}
+#menuAluno{
+	background: url(../imagens/bg_menuAluno.jpg) no-repeat top center;
+	width: 216px;
+	height: 273px;
+}
+#menuAluno ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#menuAluno li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+}
+#menuAluno p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+}
+
+#menuMaior{
+	background: url(../imagens/bg_menuMaior.jpg) no-repeat top center;
+	width: 216px;
+	height: 310px;
+}
+#menuMaior ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#menuMaior li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+}
+#menuMaior p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+}
+#login{
+	background: url(../imagens/formLogin.jpg) no-repeat top center;
+	width: 216px;
+	height: 163px;
+	margin-top: 5px;
+}
+#login p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+}
+#login p #linkProgramas{
+ text-align: center;
+}
+#login label{
+	display: bolck;
+	text-align: right;
+	width: 205px;
+	float: left;
+}
+#login span{
+	font-weight: bold;
+}
+#login form{
+	padding: 0px;
+	margin: 0px;
+}
+#login .form{
+	border: solid 1px #054b87;
+	margin: 2px;
+	width: 125px;
+}
+#login .btnOk{
+	border: solid 1px #CCC;
+	background-color: #054b87;
+	font: bold 10px Verdana, Arial, sans-serif;
+    padding: 3px;
+	color: #FFF;
+}
+#login .txtFormRadio{
+	padding: 3px 0 0 70px;
+	width: 100px;
+	text-align: left;
+	/*border: solid 1px #FF0000;*/
+}
+#login .esqueceu{
+	text-align: center;
+}
+#login .botoes{
+	text-align: center;
+	display: block;
+}
+#indiqueSite{
+	background: url(../imagens/form.jpg) no-repeat top center;
+	width: 216px;
+	height: 67px;
+	margin-top: 5px;
+}
+#indiqueSite p{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+}
+#indiqueSite a{
+	padding: 5px;
+}
+#divDireita{
+	float: right;
+	width: 464px;
+	margin: 5px 0px;
+}
+#imgTopo{
+	background: url(../imagens/top_3.jpg) no-repeat bottom;
+	width: 464px;
+	height: 6px;
+}
+#imgBaixo{
+	background: url(../imagens/bot_2.jpg) no-repeat top;
+	width: 464px;
+	height: 7px;
+}
+#conteudo{
+	background: #FFFFFF url(../imagens/fundoConteudo.gif) repeat center;
+	width: 464px;
+}
+.foto{
+	background: #FFFFFF url(../imagens/pic_1.jpg) no-repeat left center;
+	width: 140px;
+	height: 102px;
+	margin: 5px;
+	float: left;
+}
+#textoFoto{
+	width: 295px;
+	float: left;
+	margin-left: 5px;
+}
+#textoFoto p{
+	color: #000;
+}
+#textoFoto h2{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+#textoFoto strong{
+	color: #054b87;
+	font-weight: bold;
+}
+hr{
+	clear: both;
+	border-top: 1px dashed #054b87;
+	width: 432px;
+	height: 1px;
+	margin-top: 5px;
+}
+#cursosInscAbertas{
+	background: url(../imagens/the.jpg) no-repeat top center;
+	width: 432px;
+	margin-left: 16px;
+}
+#cursosInscAbertas h2{
+	text-align: left;
+	margin: 5px;
+}
+#cursosInscAbertas ul{
+	margin: 0px;
+	padding: 5px 20px;
+}
+#cursosInscAbertas li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+}
+#noticias{
+	background: url(../imagens/the.jpg) no-repeat top center;
+	width: 432px;
+	margin-left: 16px;
+}
+#noticias h2{
+	text-align: left;
+}
+#noticias p{
+	margin: 5px;
+}
+.textoResumo{
+    color: #000;
+}
+#rodape{
+	width: 685px;
+	margin-top: 5px;
+	clear: both;
+}
+#copy{
+	background: #FFFFFF url(../imagens/bottom_1.jpg) repeat center;
+	width: 216px;
+	height: 43px;
+	float: left;
+}
+#copy p{
+	color: #FFF;
+	padding-top: 15px;
+	text-align: center;
+}
+#subMenu{
+	background: #FFFFFF url(../imagens/bottom_2.jpg) repeat center;
+	width: 465px;
+	height: 43px;
+	float: right;
+	text-align: center;
+}
+#subMenu ul{
+	margin: 0px;
+	padding-top: 15px;
+}
+#subMenu li{
+	display: inline;
+	padding-right: 15px;
+}
+#subMenu a{
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+}
+#subMenu a:hover{
+	text-decoration: underline;
+	color: #FFF;
+	font-weight: bold;
+}
+/* CSS PARA O ARQUIVO MATERIA_COMPLETA.PHP*/
+#Manchete{
+	background: url(../imagens/the.jpg) no-repeat top center;
+	width: 432px;
+	height: 26px;
+	margin-left: 16px;
+}
+#Manchete h2{
+	text-align: left;
+	padding: 5px;
+	margin: 0px;
+}
+#MateriaCompleta{
+	width: 432px;
+	margin: 5px 15px;
+}
+#MateriaCompleta p{
+	/*color: #000;*/
+}
+#MateriaCompleta strong{
+	color: #054b87;
+}
+#MateriaCompleta ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#MateriaCompleta li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+	/*color: #000;*/
+}
+#Ferramentas{
+	width: 432px;
+	margin: 5px 15px;
+	text-align: center;
+
+}
+#UltimasNoticias{
+	width: 432px;
+	margin: 5px 15px;
+	text-align: left;
+}
+#UltimasNoticias ul{
+	margin: 0px;
+	padding: 0px 20px;
+}
+#UltimasNoticias li{
+	padding: 0px;
+	margin: 4px 0px;
+	list-style-image: url(../imagens/point_1.jpg);
+}
+/* CONTATO.PHP */
+.btnMail{
+	border: solid 1px #CCC;
+	background-color: #054b87;
+	font: bold 11px Verdana, Arial, sans-serif;
+	padding: 3px;
+	color: #FFF;
+	margin-right: 5px;
+}
+/* RECOMENDE O NOSSO SITE */
+#titulo{
+	font: normal 11px Verdana, Arial, sans-serif;
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+	color: #054b87;
+}
+#titulo hr{
+	width: 100%;
+	height: 1px;
+}
+#titulo h2{
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+#titulo p{
+	color: #000;
+	font-size: 12px;
+	margin: 5px 0px;
+}
+#titulo label{
+	display: bolck;
+	text-align: right;
+	width: 100%;
+	float: left;
+}
+#titulo span{
+	font-weight: bold;
+	font-size: 12px;
+}
+#titulo form{
+	padding: 0px;
+	margin: 0px;
+}
+#titulo .form{
+	border: solid 1px #054b87;
+	margin: 0 5px;
+}
+#titulo .btnEnviar{
+	border: solid 1px #CCC;
+	background-color: #054b87;
+	font: bold 11px Verdana, Arial, sans-serif;
+	padding: 3px;
+	color: #FFF;
+	margin-right: 15px;
+}
+#titulo #botoes{
+	text-align: center;
+	margin-top: 5px;
+}
+/* ESQUECEU SUA SENHA */
+#esqueceuSenha{
+	font: normal 11px Verdana, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: #054b87;
+}
+#esqueceuSenha h2{
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+#esqueceuSenha p{
+	color: #000;
+	font-size: 12px;
+	margin: 5px 0px;
+}
+#esqueceuSenha .btnEnviar{
+	border: solid 1px #CCC;
+	background-color: #054b87;
+	font: bold 11px Verdana, Arial, sans-serif;
+	padding: 3px;
+	color: #FFF;
+	margin-right: 15px;
+}
+#esqueceuSenha label{
+	display: bolck;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+#esqueceuSenha span{
+	font-weight: bold;
+	font-size: 12px;
+}
+#botoes{
+	text-align: center;
+	margin-top: 10px;
+}
+.btn{
+	border: solid 1px #CCC;
+	background-color: #054b87;
+	font: bold 11px Verdana, Arial, sans-serif;
+	padding: 3px;
+	color: #FFF;
+	margin-right: 15px;
+}
+/* AREA DO ALUNO */
+.celulaResultado{
+    padding: 1px;
+    border: 1px #DDDDDD solid;
+    HEIGHT: 17PX;
+}
+.celulaResultadoMenor{
+    padding: 1px;
+    border: 1px #DDDDDD solid;
+    HEIGHT: 17PX;
+    font-size: 8px;
+}

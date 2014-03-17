@@ -2,19 +2,21 @@
 /*
  * PORTICULARIDADES DO SISTEMA PARA ATENDER A EMPRESA IPECON
  */
- /*echo "<pre>";
- print_r($_REQUEST);
- echo "</pre>";*/
- include_once("conexao.inc.php");
+ include_once("../../../conexao.inc.php");
 
- $comando = "SELECT A.Nome,A.Id_Numero, E.* ,B.*
+ $comando = "SELECT A.Nome,A.Id_Numero, E.* ,B.nossoNumero
 			FROM boletos B
 			INNER JOIN aluno A ON A.Id_Numero = B.idNumero
-			LEFT OUTER JOIN endereco E ON E.Id_Numero = B.idNumero
+			INNER JOIN endereco E ON E.Id_Numero = B.idNumero
 			WHERE
 				B.idNumero = '".$_REQUEST['idNumero']."' AND B.codgCurso = ".$_REQUEST['curso'];
 
- $result = mysql_query($comando) or die('Erro na consulta do Boleto. ');
+ /*echo "<pre>";
+ print_r($_REQUEST);
+ print_r($comando);
+ echo "</pre>";*/
+ 
+ $result = mysql_query($comando) or die('Erro na consulta do Boleto. '.mysql_error());
  $dados = mysql_fetch_array($result);
 
 // +----------------------------------------------------------------------+

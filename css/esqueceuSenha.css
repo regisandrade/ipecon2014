@@ -1,0 +1,65 @@
+/*** Esqueceu Senha ***/
+body {
+    margin: 0;
+    font: normal 13px Arial;
+    color: #333333;
+    background: url(../imagens/imgBackGround.jpg) repeat;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
+
+#geralEsqueceuSenha{
+	margin: 0px;
+	border: solid 1px #333333;
+	padding: 5px;
+	background-color: #FFFFFF;
+	width: 438px;
+	height: 313px;
+}
+#geralEsqueceuSenha hr{
+    width: 90px;
+    border-bottom: solid 6px #136399;
+    color: #136399;
+    margin: 0px;
+}
+#geralEsqueceuSenha h2{
+    color: #136399;
+    margin: 0px;
+}
+
+
+#geralEsqueceuSenha label{
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width: 150px;
+    float: left;
+    color: #333333;
+}
+#geralEsqueceuSenha textoLogin{
+    font-size:11px;
+    font-weight:normal;
+    text-align:left;
+    width:40px;
+}
+#geralEsqueceuSenha input{
+    float:left;
+    font-size:12px;
+    margin-bottom: 10px;
+    border:solid 1px #aacfe4;
+    width: 150px;
+}
+.botao{
+    font: bold 13px Verdana;
+    padding: 3px;
+    background-color: #DDD;
+    border: solid 1px #333333;
+    margin-right: 5px;
+    color: #333333;
+}

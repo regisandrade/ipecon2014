@@ -7,7 +7,7 @@
                     <td><h2 align="center">Parabéns, sua pré-inscrição foi realizada com sucesso.</h2>
                     <p style="text-align: center;">Click no botão abaixo para gerar o boleto de pagamento da inscrição.</p>
                     <p style="text-align: center;"><br/>
-                    <a data-toggle="modal" data-target="#webpageDialog" class="btn btn-warning btn-large">GERAR BOLETO DA PRÉ-INSCRIÇÃO</a>
+                    <a data-toggle="modal" data-target="#webpageDialog" class="btn btn-warning btn-large" id="btnBoleto">GERAR BOLETO DA PRÉ-INSCRIÇÃO</a>
                     </td>
                 </tr>
                 <?php

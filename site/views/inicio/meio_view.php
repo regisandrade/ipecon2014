@@ -29,25 +29,30 @@ $cursos = $this->db
     foreach ($cursos as $curso) {
       switch ($volta) {
         case '0':
-          $estilo = "left: 200px; top: 32px;";
+          $estilo = "left: 165px; top: 32px;";
           break;
         case '1':
-          $estilo = "left: 210px; top: 32px;";
+          $estilo = "left: 160px; top: 32px;";
           break;
         case '2':
-          $estilo = "left: 175px; top: 32px; width: 23.5%;";
+          $estilo = "left: 120px; top: 32px; width: 23.5%;";
           break;
         case '3':
-          $estilo = "left: 200px; top: 85px;";
+          $estilo = "left: 165px; top: 85px;";
           break;
         case '4':
-          $estilo = "left: 210px; top: 85px;";
+          $estilo = "left: 160px; top: 85px;";
           break;
         case '5':
-          $estilo = "left: 175px; top: 85px; width: 23.5%;";
+          $estilo = "left: 120px; top: 85px; width: 23.5%;";
           break;
       }
-      echo "<li style=\"".$estilo."\"><a href=\"".base_url('index.php')."/cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' e ', ' e <br>', $curso->Nome)."</a></li>";
+      if ($volta == 3) {
+        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' de ', ' de <br>', $curso->Nome)."</a></li>";
+      }
+      else {
+        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' e ', ' e <br>', $curso->Nome)."</a></li>";
+      }
       $volta++;
     }
     ?>
@@ -96,7 +101,7 @@ $cursos = $this->db
         <ul>
           <?php
           foreach ($noticias as $noticia) {
-            echo '<li><a href="'.base_url('index.php').'/noticias/verNoticia/'.$noticia->id_noticia.'">'.substr($noticia->titulo,0,91).'</a></li>';
+            echo '<li><a href="'.base_url().'noticias/verNoticia/'.$noticia->id_noticia.'">'.substr($noticia->titulo,0,91).'</a></li>';
           }
           ?>
         </ul>

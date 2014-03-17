@@ -1,0 +1,36 @@
+[04-Feb-2013 08:15:41] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 08:15:41] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Feb-2013 09:26:16] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 09:26:16] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Feb-2013 10:23:18] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 10:23:18] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Feb-2013 11:05:15] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 11:05:15] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Feb-2013 11:12:56] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 11:12:56] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Feb-2013 13:06:07] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Feb-2013 13:06:08] PHP Warning:  Cannot load module 'pdo_sqlite' because required module 'pdo' is not loaded in Unknown on line 0

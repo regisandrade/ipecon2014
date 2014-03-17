@@ -220,6 +220,7 @@ h4 {font-size:16px;}
   margin: 2% 0 2% 0;
   position: relative;
   left: -250px;
+  text-shadow: 3px 3px 5px #666666;
 }
 
 .contato-titulo {
@@ -251,6 +252,14 @@ h4 {font-size:16px;}
 .texto a:hover{
 	color: #FAA732;
 	text-decoration: none;
+}
+#btnBoleto a{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+#btnBoleto a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
 }
 /* Final paginas */
 

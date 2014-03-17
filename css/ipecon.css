@@ -1,0 +1,549 @@
+body { 
+    margin: 0 10% 0 13%;
+    font: normal 13px Arial;
+    color: #333333;
+    background: url(../imagens/imgBackGround.jpg) repeat;
+}
+
+h2,h3,h4,h5,h6 { margin-left: -3% }
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
+
+a.menuSite{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+a.menuSite:hover{
+    text-decoration: none;
+    color: #F8C301;
+}
+
+#geral{
+    background-color: #FFFFFF;
+    width: 771px;
+    margin: 0px;
+}
+
+#menu{
+    width: 771px;
+    height: 231px;
+    background: url(../imagens/imgTopo.jpg) no-repeat;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 17px;
+}
+/* Lista */
+#menu ul{
+    margin: 0px;
+    width: 770px;
+    padding: 195px 0 0 4px;
+}
+#menu li{
+    display: inline;
+    padding-right: 7px;
+    color: #FFF;
+}
+
+#cursos{
+    width: 771px;
+    height: 353px;
+    background: url(../imagens/imgFundoCursos.jpg) no-repeat;
+    margin: 0px;
+    padding: 5px 0 0 16px;
+}
+
+#cursos a:hover{
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#cursos p{
+    font-size: 10px;
+    margin: 0px;
+    padding: 2px 0px;
+    height: 35px;
+    text-align: center;
+}
+
+#dvCuros1{
+    width: 185px;
+    height: 161px;
+    float: left;
+    background-position: 0 25px;
+    margin-top: 10px;
+}
+#dvCuros1 p{
+    background-color: #026D34;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros2{
+    width: 185px;
+    height: 161px;
+    float: left;
+    background-position: 0 25px;
+    margin-top: 10px;
+}
+#dvCuros2 p{
+    background-color: #DD8304;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros3{
+    width: 185px;
+    height: 161px;
+    float: left;
+    background-position: 0 25px;
+    margin-top: 10px;
+}
+#dvCuros3 p{
+    background-color: #8E5F31;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros4{
+    width: 185px;
+    height: 161px;
+    float: left;
+    background-position: 0 25px;
+    margin-top: 10px;
+}
+#dvCuros4 p{
+    background-color: #83AC2C;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros5{
+    width: 185px;
+    height: 148px;
+    float: left;
+    background-position: 0 25px;
+}
+#dvCuros5 p{
+    background-color: #46474C;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros6{
+    width: 185px;
+    height: 148px;
+    float: left;
+    background-position: 0 25px;
+}
+#dvCuros6 p{
+    background-color: #088F6E;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros7{
+    width: 185px;
+    height: 148px;
+    float: left;
+    background-position: 0 25px;
+}
+#dvCuros7 p{
+    background-color: #294B78;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#dvCuros8{
+    width: 185px;
+    height: 148px;
+    float: left;
+    background-position: 0 25px;
+}
+#dvCuros8 p{
+    background-color: #111C35;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#outros{
+    height: 771px;
+    height: 215px;
+    margin: 5px 0 0 3px;
+}
+
+#dvAreaRestrita{
+    width: 254px;
+    height: 209px;
+    float: left;
+    background: url(../imagens/imgFundoOutros.jpg) no-repeat;
+}
+#dvAreaRestrita p{
+    text-align: center;
+    color: #136399;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#dvParceria{
+    width: 254px;
+    height: 209px;
+    float: left;
+    background: url(../imagens/imgFundoOutros.jpg) no-repeat;
+}
+#dvParceria p{
+    text-align: center;
+    color: #136399;
+    font-weight: bold;
+    font-size: 16px;
+}
+#dvParceria .txtParceria{
+    font-weight: normal;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+}
+#dvParceria .img{
+    width: 211px;
+    height: 112px;
+    position:relative;
+    left: 10%;
+    top: 5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#dvFacebook{
+    width: 254px;
+    height: 209px;
+    float: left;
+    background: url(../imagens/imgFundoOutros.jpg) no-repeat;
+}
+#dvFacebook img{
+    margin: 0px;
+    padding: 10px 0 0 65px;
+}
+#dvParceria p{
+    padding: 0;
+}
+#tituloFacebook{
+    text-align: center;
+    color: #136399;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#dvNoticias{
+    width: 254px;
+    height: 209px;
+    float: left;
+    background: url(../imagens/imgFundoOutros.jpg) no-repeat;
+}
+#dvNoticias p{
+    text-align: center;
+    color: #136399;
+    font-weight: bold;
+    font-size: 16px;
+}
+#dvNoticias ul{
+    margin: 0px 6px 0 26px;
+    padding: 0px;
+}
+#dvNoticias li{
+    padding: 0px;
+    margin: 0px;
+    list-style-image: url(../imagens/point_1.jpg);
+    /*color: #000;*/
+}
+#rodape{
+    width: 771px;
+    background: url(../imagens/imgRodape.jpg) repeat;
+    height: 48px;
+}
+#rodape p{
+    font-size: 10px;
+    text-align: center;
+}
+
+/************ FORMULARIO DO LOGIN ***************/
+#formLoginAluno{
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+#formLoginAluno a{
+    display:block;
+    font-size:13px;
+    font-weight:normal;
+    text-align:center;
+}
+#formLoginAluno label{
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width: 65px;
+    float: left;
+    color: #333333;
+}
+#formLoginAluno textoLogin{
+    display:block;
+    font-size:13px;
+    font-weight:normal;
+    text-align:left;
+}
+#formLoginAluno input{
+    float:left;
+    font-size:14px;
+    margin-bottom: 10px;
+    border:solid 1px #aacfe4;
+    padding: 2px;
+}
+#formLoginAluno #txtUsuario{
+    width: 150px;
+}
+#formLoginAluno #txtSenha{
+    width: 150px;
+}
+
+/************ FORMULARIO NEWSLETTER ***************/
+#formNewsletter{
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+#formNewsletter label{
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width: 65px;
+    float: left;
+    color: #333333;
+}
+#formNewsletter input{
+    float:left;
+    font-size:14px;
+    margin-bottom: 10px;
+    border:solid 1px #aacfe4;
+    padding: 2px;
+}
+#formNewsletter #nome{
+    width: 210px;
+}
+#formNewsletter #email{
+    width: 210px;
+}
+
+/* Botão */
+.botao{
+    font: bold 13px Verdana;
+    padding: 3px;
+    background-color: #DDD;
+    border: solid 1px #333333;
+    margin-right: 5px;
+    color: #333333;
+    padding: 5px;
+}
+
+txtMini{
+    font: normal 13px Arial;
+    color: #333333;
+    padding: 2px;
+    width: 50px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+}
+.txtPequeno{
+    font: normal 13px Arial;
+    color: #333333;
+    padding: 2px;
+    width: 150px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+}
+.txtMedio{
+    font: normal 13px Arial;
+    color: #333333;
+    padding: 2px;
+    width: 300px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+}
+.txtGrande{
+    font: normal 13px Arial;
+    color: #333333;
+    padding: 2px;
+    width: 450px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+}
+.txtGrandeArea{
+    font: normal 13px Arial;
+    color: #333333;
+    padding: 2px;
+    width: 490px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+}
+
+/************* Materia Completa *******************/
+#corpoAluno{
+    width: 771px;
+    height: 450px;
+    overflow:auto;
+    margin: 0 5px;
+}
+#corpo{
+    width: 771px;
+    height: 916px;
+    overflow:auto;
+    margin: 0 5px;
+}
+#corpo h2{
+    color: #136399;
+    margin: 0px;
+}
+#corpo p, strong{
+    color: #333333;
+}
+#corpo hr{
+    width: 90px;
+    border-bottom: solid 6px #136399;
+    color: #136399;
+    margin: 0px;
+}
+#corpo ul{
+    margin: 0px;
+    padding: 0px 20px;
+}
+#corpo li{
+    padding: 0px;
+    margin: 4px 0px;
+    list-style-image: url(../imagens/point_1.jpg);
+    /*color: #000;*/
+}
+#ferramentas{
+    width: 745px;
+    margin: 5px;
+    text-align: center;
+}
+/* Formulario Inscrição */
+.textoInscricao13Negrito{
+    font-weight: bold;
+    color: #333333;
+}
+.textoInscricao12Negrito{
+    font-weight: bold;
+    color: #333333;
+}
+
+.txtInscricaoMini{
+    color: #333333;
+    padding: 4px;
+    width: 100px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+    background-color: #FFFFDD;
+}
+.txtInscricaoPequeno{
+    color: #333333;
+    padding: 4px;
+    width: 200px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+    background-color: #FFFFDD;
+}
+.txtInscricaoMedio{
+    color: #333333;
+    padding: 4px;
+    width: 300px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+    background-color: #FFFFDD;
+}
+.txtInscricaoGrande{
+    color: #333333;
+    padding: 4px;
+    width: 450px;
+    border: solid 1px #CCC;
+    margin-top: 4px;
+    background-color: #FFFFDD;
+}
+
+/* ESTILO DA ÁREA DO ALUNO */
+#dvEsquerdaAluno{
+    width: 20%;
+    float: left;
+    height: 350px;
+}
+#dvEsquerdaAluno ul{
+    list-style-type: disc;
+    color: #333;
+    padding-left: 20px;
+    margin: 0px;
+}
+#dvDireitaAluno{
+    width: 79%;
+    float: right;
+    height: 448px;
+    overflow: auto;
+}
+#dvDireitaAluno ul{
+    list-style-type: disc;
+    color: #333;
+    padding-left: 20px;
+}
+#dvDireitaAluno h2{
+    text-align: left;
+    color: #136399;
+    padding-bottom: 10px;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+#dvDireitaAluno h3{
+    text-align: left;
+    color: #136399;
+    margin: 0px;
+}
+#dvDireitaAluno p{
+    color: #333;
+}
+#dvDireitaAluno li{
+    color: #333;
+}
+#dvDireitaAluno li a{
+    color: #333;
+}
+a.menuAluno{
+    text-decoration: none;
+    color: #333;
+}
+a.menuAluno:hover{
+    text-decoration: underline;
+    color: #333;
+}
+#dvDireitaAluno table{
+    width: 100%;
+}
+#dvDireitaAluno td{
+    padding: 3px;
+    color: #333;
+}
+#dvDireitaAluno a{
+    color: #333;
+}

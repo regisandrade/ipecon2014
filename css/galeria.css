@@ -1,0 +1,46 @@
+/** GALERIA DE FOTOS **/
+body{
+	background: url(../imagens/bg_geral.jpg) no-repeat;
+	margin: 0px
+	padding: 0px;
+	font: bold 12px Verdana, Arial, Tahoma, Sans-Serif;
+	color: #054b87;
+}
+h2{
+ margin: 0px;
+ padding: 0px;
+ font-size: 12px;
+ padding: 2px;
+ text-align: center;
+}
+#TituloGaleria{
+	width: 640px;
+	border: dotted 1px #DDD;
+	margin: 0px;
+}
+#FotoGrande{
+    width: 400px;
+	border: dotted 1px #DDD;
+	float: left;
+	padding: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+#FotoGrande img{
+	border: solid #054b87 1px;
+}
+#FotoPequena{
+	width: 225px;
+	border: dotted 1px #DDD;
+	float: left;
+	overflow: auto;
+	text-align: center;
+	height: 310px;
+	margin-top: 4px;
+}
+#FotoPequena img{
+	border: solid #009EBD 1px;
+	padding: 1px;
+	margin: 1px;
+}
+/** FIM **/

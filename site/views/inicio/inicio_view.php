@@ -34,11 +34,11 @@ define("LONGITUDE", $config->longitude_endereco);
   <!--<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
 
   <link rel="stylesheet" href="<?php echo base_url();?>public/css/generico.css"/>
-  <!--
+  
   <link href="<?php echo base_url()?>public/css/dialog.css" rel="stylesheet" type="text/css" />
-
+  
+  <!--
   <link href="<?php echo base_url()?>public/imagem/layout/faf.png" rel="icon" />
-
   <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />-->
 
   <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>

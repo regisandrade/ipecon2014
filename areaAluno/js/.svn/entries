@@ -1,0 +1,23 @@
+8
+
+dir
+0
+https://opensvn.csie.org/regisandrade/ipecon/areaDoAluno/js
+https://opensvn.csie.org/regisandrade
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+areaAluno.js
+file
+
+
+
+add
+

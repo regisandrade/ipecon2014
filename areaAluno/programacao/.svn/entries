@@ -1,0 +1,23 @@
+8
+
+dir
+0
+https://opensvn.csie.org/regisandrade/ipecon/areaDoAluno/programacao
+https://opensvn.csie.org/regisandrade
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+PROGRAMACAO_DO_CURSO_DE_PERICIA_3_TURMA.pdf
+file
+
+
+
+add
+
