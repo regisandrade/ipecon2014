@@ -27,7 +27,7 @@ class Alunos extends CI_Controller {
 			$_SESSION['eMail'] = $resultado->e_Mail;
 			$_SESSION['ano'] = $resultado->Ano;
         	
-        	redirect(base_url().'areaAluno/selecionarCurso.php');
+        	redirect(base_url().'aluno/selecionarCurso.php');
         }else{
         	$data['msgErro'] = "<strong>Atenção!!</strong><br>Login ou Senha não cadastrada.";
         	$this->load->view('inicio/inicio_view',$data);

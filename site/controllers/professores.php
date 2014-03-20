@@ -6,6 +6,7 @@ class Professores extends CI_Controller {
 		$data['pagina'] = 'professores/professores';
 
 		$data['professores'] = $this->db
+								->join('curriculo','curriculo.CodgProfessor = professor.Id_Numero','LEFT')
 								->order_by('Nome')
 								->get('professor')->result();
 
