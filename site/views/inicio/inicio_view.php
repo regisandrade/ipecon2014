@@ -41,7 +41,7 @@ define("LONGITUDE", $config->longitude_endereco);
   <link href="<?php echo base_url()?>public/imagem/layout/faf.png" rel="icon" />
   <link  rel="shortcut icon" href="<?php echo base_url();?>public/imagem/layout/fivecon.png" />-->
 
-  <script src="<?php echo base_url()?>public/script/jquery.min.js" ></script>
+  <script src="<?php echo base_url()?>public/script/jquery-1.11.0.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
   <script src="<?php echo base_url()?>public/script/regras.validate.js"></script>
 
@@ -83,16 +83,10 @@ define("LONGITUDE", $config->longitude_endereco);
     </div>
   </div> <!-- Fim da div#tudo -->
 
-  <!-- lightBox javascript
+  <!-- lightBox 2 javascript
   ================================================== -->
-  <script>var url = '<?php echo base_url()?>'; </script>
-  <script type="text/javascript" src="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.js"></script>
-     <script type="text/javascript">
-    $(function() {
-    $('.box-expandir').lightBox();
-    });
-    </script>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.css" media="screen" />
+  <link href="<?php echo base_url()?>public/util/box/css/lightbox.css" rel="stylesheet" />
+  <script type="text/javascript" src="<?php echo base_url()?>public/util/box/lightbox-2.6.min.js"></script>
 
   <!-- Le javascript
   ================================================== -->

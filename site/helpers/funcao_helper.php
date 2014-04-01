@@ -8,16 +8,14 @@ function imagensLightBox($texto){
 		   
 		   foreach($imagensDoTexto as $imagem){
 			    $attImagem = simplexml_load_string($imagem);
-			    $htmlLightBox = "<a class='box-expandir' href='".$attImagem['src']."'>";
+			    $htmlLightBox = "<a data-lightbox=\"imagem-1\" href='".$attImagem['src']."'>";
 				$htmlLightBox .= $imagem;
 				$htmlLightBox .= "</a>";
 				$textoRetorno = str_ireplace($imagem,$htmlLightBox,$textoRetorno);
-			   }
+			}
 		   
-		  echo $textoRetorno;	
-          
-	
-	}
+		  echo $textoRetorno;
+}
 
 function set_alert($tipo,$msg){
 	 $_SESSION['notificacao'][] = array('tipo'=>$tipo,'msg'=>$msg);
