@@ -5,6 +5,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
                  ->result();
 $cursos = $this->db
                ->where('Status','1')
+               ->where('Codg_Curso <> ','23')
                ->order_by('Ordem','ASC')
                ->get('curso')
                ->result();
@@ -115,12 +116,3 @@ $cursos = $this->db
 
 </div>
 <!-- /conteudo -->
-
-<script>var url = '<?php echo base_url()?>'; </script>
-<script type="text/javascript" src="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $('.box-expandir').lightBox();
-  });
-</script>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>public/util/box/jquery.lightbox-0.5.css" media="screen" />

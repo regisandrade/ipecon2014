@@ -69,11 +69,11 @@ body {
 }
 #header-logo img{
   position: relative;
-  top: -25px;
-  left: 12px;
+  top: -15px;
+  left: 30px;
   float: left;
-  width: 285px;
-  height: 113px;
+  width: 267px;
+  /* height: 113px; */
 }
 #header-menu{
   position: relative;

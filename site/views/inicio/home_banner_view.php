@@ -1,5 +1,7 @@
 <?php
-  $banner = $this->db->get("banners")->result();	  
+  $banner = $this->db
+  				  ->order_by("id_banners","DESC")
+  				  ->get("banners")->result();	  
 ?>
 
 <!-- BEGIN BANNER -->
