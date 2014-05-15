@@ -5,8 +5,7 @@ $noticias = $this->db->order_by("id_noticia","desc")
                  ->result();
 $cursos = $this->db
                ->where('Status','1')
-               ->where('Codg_Curso <> ','23')
-               ->order_by('Ordem','ASC')
+               ->order_by('Ordem','DESC')
                ->get('curso')
                ->result();
 ?>
@@ -39,21 +38,25 @@ $cursos = $this->db
           $estilo = "left: 120px; top: 32px; width: 23.5%;";
           break;
         case '3':
-          $estilo = "left: 165px; top: 85px;";
+          $estilo = "left: 165px; top: 70px;";
           break;
         case '4':
-          $estilo = "left: 160px; top: 85px;";
+          $estilo = "left: 160px; top: 70px;";
           break;
         case '5':
-          $estilo = "left: 120px; top: 85px; width: 23.5%;";
+          $estilo = "left: 120px; top: 70px; width: 23.5%;";
+          break;
+        case '6':
+          $estilo = "left: 165px; top: 125px;";
           break;
       }
-      if ($volta == 3) {
-        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' de ', ' de <br>', $curso->Nome)."</a></li>";
+      echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' de ', ' de <br>', str_replace(': ',': <br>',$curso->Nome))."</a></li>";
+      /* if ($volta == 3) {
+        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' de ', ' de <br>', $curso->Nome).'|'.$volta."</a></li>";
       }
       else {
-        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' e ', ' e <br>', $curso->Nome)."</a></li>";
-      }
+        echo "<li style=\"".$estilo."\"><a href=\"".base_url()."cursos/getCurso/".$curso->Codg_Curso."\">".str_replace(' e ', ' e <br>', $curso->Nome).'|'.$volta."</a></li>";
+      } */
       $volta++;
     }
     ?>
