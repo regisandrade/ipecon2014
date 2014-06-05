@@ -116,6 +116,8 @@ $cursos = $this->db
     </div>
   </div>
   <!-- login-noticias-facebook -->
-
+  <div id="dialog">
+    <iframe id="myIframe" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
 </div>
 <!-- /conteudo -->

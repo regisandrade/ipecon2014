@@ -22,6 +22,7 @@
                     <li><a href="<?php echo base_url('index.php')?>/depoimentos">DEPOIMENTOS</a></li>
                     <li><a href="<?php echo base_url('index.php')?>/links">LINKS</a></li>
                     <li><a href="<?php echo base_url('index.php')?>/artigos">ARTIGOS</a></li>
+                    <li><a href="<?php echo base_url('index.php')?>/videos">VÍDEOS</a></li>
                     <li><a href="<?php echo base_url('index.php')?>/fotos">FOTOS</a></li>
                     <li><a href="<?php echo base_url('index.php')?>/localizacao">LOCALIZAÇÃO</a></li>
                </ul>

@@ -18,12 +18,10 @@ define("LONGITUDE", $config->longitude_endereco);
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8" />
-	<title><?php echo EMPRESA ?></title>
+  <meta charset="UTF-8" />
+  <title><?php echo EMPRESA ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-
-	<meta name="author" content="Régis Andrade - regisandrade@gmail.com" />
+  <meta name="author" content="Régis Andrade - regisandrade@gmail.com" />
   <meta name="description" content="<?php  echo isset($metadescricao)?$metadescricao:$config->descricao?>">
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="<?php  echo isset($title)?$config->empresa.' - '.$title:$config->empresa.' - '.$config->slogan?>" />
@@ -44,6 +42,9 @@ define("LONGITUDE", $config->longitude_endereco);
   <script src="<?php echo base_url()?>public/script/jquery-1.11.0.min.js" ></script>
   <script src="<?php echo base_url()?>public/script/jquery.validate.min.js"></script>
   <script src="<?php echo base_url()?>public/script/regras.validate.js"></script>
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
   <script src="<?php echo base_url()?>public/script/generica.js" ></script>
 
@@ -82,7 +83,6 @@ define("LONGITUDE", $config->longitude_endereco);
       <?php $this->load->view('inicio/rodape_view'); # Rodape?>
     </div>
   </div> <!-- Fim da div#tudo -->
-
   <!-- lightBox 2 javascript
   ================================================== -->
   <link href="<?php echo base_url()?>public/util/box/css/lightbox.css" rel="stylesheet" />
