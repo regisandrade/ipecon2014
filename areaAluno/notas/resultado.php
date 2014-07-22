@@ -8,7 +8,7 @@ $cmd_turma = "SELECT * FROM turma WHERE Turma = '".$_SESSION['turma']."'";
 $res_turma = mysql_query($cmd_turma) or die ("<font face='Verdana' size='2'>Erro na Consulta da Turma. <br><strong>Comando:</strong> <font color='#FF0000'>".$cmd_turma."</font><br><strong>Erro:</strong> ".mysql_error());
 $reg_turma = mysql_fetch_array($res_turma);
 
-$arrTurmas = array('PJA001','CF011','GP002','AU007','AU006','AU005','CF010','CF012','CASP1');
+$arrTurmas = array('PJA001','CF011','GP002','AU007','AU006','AU005','CF010','CF012','CASP1','AGT8');
 
 //== Consultar Notas
 $comando = "

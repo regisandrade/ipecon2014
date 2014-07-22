@@ -35,6 +35,7 @@ window.addEventListener('load', function () {
 	$('#dialog').dialog('open');
 }, false);
 
+/*
 function abrirVideo(titulo,url) {
 	$("#dialogVideos").dialog({
 	    autoOpen: false,
@@ -46,4 +47,4 @@ function abrirVideo(titulo,url) {
 	          }
 	});	
 	$('#dialogVideos').dialog('open');
-}
+}*/

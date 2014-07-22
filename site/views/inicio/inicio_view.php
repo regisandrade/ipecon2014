@@ -31,7 +31,7 @@ define("LONGITUDE", $config->longitude_endereco);
   <link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap.css"/>
   <!--<link rel="stylesheet" href="<?php echo base_url();?>public/util/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
 
-  <link rel="stylesheet" href="<?php echo base_url();?>public/css/generico.css"/>
+  <link rel="stylesheet" href="<?php echo base_url();?>public/css/generico.css?<?php echo rand(1,1000); ?>"/>
   
   <link href="<?php echo base_url()?>public/css/dialog.css" rel="stylesheet" type="text/css" />
   
@@ -46,10 +46,20 @@ define("LONGITUDE", $config->longitude_endereco);
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-  <script src="<?php echo base_url()?>public/script/generica.js" ></script>
+  <script src="<?php echo base_url()?>public/script/generica.js?<?php echo rand(1,100); ?>" ></script>
 
 </head>
 <body>
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-157037-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
